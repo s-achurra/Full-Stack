@@ -30,7 +30,7 @@ MeetApp is a social website focused on bringing people together for face-to-face
 [DB schema][schema]
 [Sample State][sample-state]
 
-[wireframes]:/docs/wireframes
+[wireframes]:/wireframes
 [components]:component-hierarchy.md
 [api-endpoints]:api-endpoints.md
 [schema]:schema.md
