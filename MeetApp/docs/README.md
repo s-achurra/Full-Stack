@@ -1,60 +1,67 @@
-MeetApp
+# MeetApp
 
-Heroku link Note: TBD
+[Heroku link][heroku] Note: TBD
 
-Trello link: TBD
+[Trello link][trello]: TBD
 
-Minimum Viable Product
+[heroku]: tdb
+[trello]: tdb
+
+## Minimum Viable Product
 
 MeetApp is a social website focused on bringing people together for face-to-face events, based on the web application MeetUp. By the end of Week 9, this app will, at a minimum, satisfy the following criteria with smooth, bug-free navigation, adequate seed data and sufficient CSS styling:
 
- Hosting on Heroku
- New account creation, login, and guest/demo login
- Groups and joining groups
- Events and RSVPs
- Calendar (on group page)
- Search by location and group info (name, description)
- Bonus: Categories
- Bonus: Calendar (for all groups in search results)
- Bonus: Integrated Google Maps
- Production README sample
+ - [ ] Hosting on Heroku
+ - [ ] New account creation, login, and guest/demo login
+ - [ ] Groups and joining groups
+ - [ ] Events and RSVPs
+ - [ ] Calendar (on group page)
+ - [ ] Search by location and group info (name, description)
+ - [ ] Bonus: Categories
+ - [ ] Bonus: Calendar (for all groups in search results)
+ - [ ] Bonus: Integrated Google Maps
+ - [ ] Production README sample
 
-Design Docs
+## Design Docs
 
-View Wireframes
-React Components
-API endpoints
-DB schema
-Sample State
-Implementation Timeline
+[View Wireframes][wireframes]
+[React Components][components]
+[API endpoints][api-endpoints]
+[DB schema][schema]
+[Sample State][sample-state]
 
-Phase 1: Backend setup and Front End User Authentication (2 days)
+[wireframes]:/wireframes
+[components]:component-hierarchy.md
+[api-endpoints]:api-endpoints.md
+[schema]:schema.md
+[sample-state]:sample-state.md
 
-Objective: Functioning rails project with front-end Authentication
 
-Phase 2: Notes Model, API, and components (2 days)
+## Implementation Timeline
 
-Objective: Notes can be created, read, edited and destroyed through the API.
+### Phase 1: Backend setup and Front End User Authentication (2 days)
 
-Phase 3: Notebooks (2 days)
+**Objective:** Functioning rails project with front-end Authentication
 
-Objective: Notes belong to Notebooks that can be created, read, edited and destroyed through the API.
+### Phase 2: Group Model, API, and components (2 days)
 
-Phase 4: Tags (1 day)
+**Objective:** Group can be created, joined, edited and destroyed through the API.
 
-Objective: Notes can be tagged with multiple tags, and tags are searchable.
+### Phase 3: Events (2 days)
 
-Phase 5: Allow Complex Styling in Notes (1 day, W2 Th 6pm)
+**Objective:** Events belong to a Group that can be created, read, edited and destroyed through the API.
 
-Objective: Allow rich text editing of notes.
+### Phase 4: Search (1 day)
 
-Phase 6: - Pagination / infinite scroll for Notes Index (1 day, W2 F 6pm)
+**Objective:** Events and groups should be search-able based on location and description.
 
-Objective: Add infinite scroll to Notes Index
+### Phase 5: Styling(2 day)
 
-Bonus Features (TBD)
+**Objective:** Review and update page styling.
 
- Search notes by content
- Set reminders on notes
- Changelogs for Notes
- Multiple sessions
+
+### Bonus Features (TBD)
+
+  - [ ] Categories
+  - [ ] Calendar (for all groups in search results)
+  - [ ] Integrated Google Maps
