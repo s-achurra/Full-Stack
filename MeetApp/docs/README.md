@@ -5,7 +5,7 @@
 [Trello link][trello]: TBD
 
 [heroku]: tdb
-[trello]: tdb
+[trello]: https://trello.com/b/Nv5I5iCq/full-stack-project
 
 ## Minimum Viable Product
 
@@ -13,8 +13,8 @@ MeetApp is a social website focused on bringing people together for face-to-face
 
  - [ ] Hosting on Heroku
  - [ ] New account creation, login, and guest/demo login
- - [ ] Groups and joining groups
  - [ ] Events and RSVPs
+ - [ ] Groups and joining groups
  - [ ] Calendar (on group page)
  - [ ] Search by location and group info (name, description)
  - [ ] Bonus: Categories
@@ -43,13 +43,13 @@ MeetApp is a social website focused on bringing people together for face-to-face
 
 **Objective:** Functioning rails project with front-end Authentication
 
-### Phase 2: Group Model, API, and components (2 days)
+### Phase 2: Events (2 days)
+
+**Objective:** Events belong to a User and can be created, joined, edited and destroyed through the API.
+
+### Phase 3: Group Model, API, and components (2 days)
 
 **Objective:** Group can be created, joined, edited and destroyed through the API.
-
-### Phase 3: Events (2 days)
-
-**Objective:** Events belong to a Group that can be created, read, edited and destroyed through the API.
 
 ### Phase 4: Search (1 day)
 
@@ -62,6 +62,6 @@ MeetApp is a social website focused on bringing people together for face-to-face
 
 ### Bonus Features (TBD)
 
+  - [ ] Integrated Google Maps
   - [ ] Categories
   - [ ] Calendar (for all groups in search results)
-  - [ ] Integrated Google Maps
