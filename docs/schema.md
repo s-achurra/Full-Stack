@@ -10,6 +10,8 @@ password_digest | string    | not null
 session_token   | string    | not null, indexed, unique
 about           | text      |
 image_link      | string    |
+first_name      | string    |
+last_name       | string    |
 
 ## groups
 column name | data type | details

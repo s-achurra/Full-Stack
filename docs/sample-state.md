@@ -32,6 +32,8 @@
       username: "name",
       about: "text",
       image_link: "url"
+      first_name: "name",
+      last_name: "name",
       events:  {
         1: {
           event_id: 1
