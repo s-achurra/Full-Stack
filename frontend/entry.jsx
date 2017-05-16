@@ -2,15 +2,26 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import * as APIUtil from './actions/session_actions';
 import configureStore from './store/store';
+import Root from './components/root';
 
 document.addEventListener('DOMContentLoaded', () => {
     const root = document.getElementById('root');
-    const store = configureStore();
+    let store;
+
+    if (window.currentUser) {
+      const preloadedState = { session: {
+        currentUser: window.currentUser,
+        errors: [] }};
+      store = configureStore(preloadedState);
+      delete window.currentUser;
+    } else {
+      store = configureStore();
+    }
 
     window.signup = APIUtil.signup;
     window.logout = APIUtil.logout;
     window.login = APIUtil.login;
     window.store = store;
 
-    ReactDOM.render(<h1>Frontend Entry File</h1>, root);
+    ReactDOM.render(<Root store={ store }/>, root);
 });
