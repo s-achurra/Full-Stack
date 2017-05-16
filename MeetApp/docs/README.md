@@ -1,10 +1,10 @@
 # MeetApp
 
-[Heroku link][heroku] Note: TBD
+[Heroku link][heroku]
 
-[Trello link][trello]: TBD
+[Trello link][trello]
 
-[heroku]: tdb
+[heroku]: https://git.heroku.com/aqueous-shelf-51851.git
 [trello]: https://trello.com/b/Nv5I5iCq/full-stack-project
 
 ## Minimum Viable Product
@@ -24,11 +24,11 @@ MeetApp is a social website focused on bringing people together for face-to-face
 
 ## Design Docs
 
-[View Wireframes][wireframes]
-[React Components][components]
-[API endpoints][api-endpoints]
-[DB schema][schema]
-[Sample State][sample-state]
+* [View Wireframes][wireframes]
+* [React Components][components]
+* [API endpoints][api-endpoints]
+* [DB schema][schema]
+* [Sample State][sample-state]
 
 [wireframes]:/tree/master/MeetApp/docs/wireframes
 [components]:component-hierarchy.md

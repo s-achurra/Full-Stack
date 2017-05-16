@@ -1,3 +1,4 @@
+```js
 {
   currentUser: {
     id: 1,
@@ -26,6 +27,23 @@
       }
     }
   },
+  user: {
+    1: {
+      username: "name",
+      about: "text",
+      image_link: "url"
+      events:  {
+        1: {
+          event_id: 1
+        }
+      }
+      groups: {
+        1: {
+          group_id: 1
+        }
+      }
+    }
+  }
   group: {
     1: {
       title: "Redux",
@@ -44,3 +62,4 @@
     }
   }
 }
+```

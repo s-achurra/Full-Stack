@@ -25,6 +25,7 @@
 - `GET /api/event/:id`
 - `PATCH /api/event/:id`
 - `DELETE /api/event/:id`
+- `SEARCH /api/event/search?query=?`
 
 ### Group
 

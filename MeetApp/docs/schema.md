@@ -8,6 +8,8 @@ username        | string    | not null, indexed, unique
 email           | string    | not null, indexed, unique
 password_digest | string    | not null
 session_token   | string    | not null, indexed, unique
+about           | text      |
+image_link      | string    |
 
 ## groups
 column name | data type | details
