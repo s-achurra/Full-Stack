@@ -55,9 +55,9 @@ MeetApp is a social website focused on bringing people together for face-to-face
 
 **Objective:** Events and groups should be search-able based on location and description.
 
-### Phase 5: Styling(2 day)
+### Phase 5: Calendar(2 day)
 
-**Objective:** Review and update page styling.
+**Objective:** Add a Calendar to Groups.
 
 
 ### Bonus Features (TBD)
