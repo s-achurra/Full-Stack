@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import * as APIUtil from './actions/session_actions';
 import configureStore from './store/store';
 import Root from './components/root';
 
@@ -17,11 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       store = configureStore();
     }
-
-    window.signup = APIUtil.signup;
-    window.logout = APIUtil.logout;
-    window.login = APIUtil.login;
-    window.store = store;
 
     ReactDOM.render(<Root store={ store }/>, root);
 });
