@@ -2,6 +2,7 @@
   color: white;
   font-size: 50px;
   font-weight: 600;
+  text-align: center;
 }
 
 .banner {
@@ -20,3 +21,42 @@
   justify-content: center;
   align-items: center;
 }
+
+.categoriesMain {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.categoriesMain h1 {
+  font-size: 40px;
+}
+
+.categoryIconsMain {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.categoryIconsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 950px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.categoryIconsList li {
+  margin: 16px;
+}
+
+.placeholderCategory {
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+}
+
