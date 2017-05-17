@@ -35,22 +35,14 @@ class SessionForm extends React.Component {
     }
 
     return (
-      <section className="auth">
-        <section className="form">
-          <h2>{this.props.formType === "login" ? "Log In" : "Sign Up"}</h2>
-          <Link to={`/${otherForm}`} />
-          <form onSubmit={this.handleSubmit}>
-            <label>
-              <input type="text" value={this.state.username} onChange={this.update('username')} />
-            </label>
-            <label>
-              <input type='password' value={this.state.password} onChange={this.update('password')} />
-            </label>
-            <button>Submit</button>
-            {errors}
-          </form>
-        </section>
-      </section>
+      <div className="wrapper">
+        <form className="form-signin">
+          <h2 className="form-signin-heading">{this.props.formType === "login" ? "Please Log In" : "Please Sign Up"}</h2>
+          <input type="text" className="form-control" name="username" placeholder="Username" required="" autoFocus="" value={this.state.username} onChange={this.update('username')}/>
+          <input type="password" className="form-control" name="password" placeholder="Password" value={this.state.password} onChange={this.update('password')} required=""/>
+          <button className="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+        </form>
+      </div>
     );
 
   }

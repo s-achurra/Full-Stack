@@ -28,3 +28,8 @@
 
 
 ## Routes
+
+|Path   | Component   |
+|-------|-------------|
+| "/signup" | "SessionFormContainer" |
+| "/signin" | "SessionFormContainer" |
