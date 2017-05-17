@@ -1,6 +1,7 @@
 import React from 'react';
 import GreetingContainer from './greeting/greeting_container';
 import SessionFormContainer from './session/session_form_container';
+import HomeContainer from './home/home_container';
 import GroupContainer from './group/group_container';
 import LogoContainer from './logo/logo_container';
 import { Route } from 'react-router-dom';
@@ -14,6 +15,7 @@ const App = () => (
       <GreetingContainer />
     </nav>
 
+    <Route exact path='/' component={HomeContainer} />
     <AuthRoute path='/login' component={SessionFormContainer} />
     <AuthRoute path='/signup' component={SessionFormContainer} />
   </div>

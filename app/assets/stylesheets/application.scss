@@ -55,7 +55,7 @@ nav>h1 {
   color: black;
 }
 
-.navButtons, .navLeft, .navText, #logoScript {
+.navButtons, .navLeft, .navText, #logoScript, hgroup {
   display: flex;
   align-items: center;
 }
@@ -81,13 +81,6 @@ nav>h1 {
   vertical-align: middle;
   text-decoration: none;
   margin-left: 16px;
-}
-
-
-hgroup {
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
 }
 
 .form {
