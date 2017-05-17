@@ -37,8 +37,8 @@ nav {
 
 .navText {
   font-family: inherit;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 20px;
   text-decoration: none;
   color: black;
   padding-left: 5px;
@@ -53,6 +53,11 @@ nav {
 nav>h1 {
   font-size: 3em;
   color: black;
+}
+
+.navButtons, .navLeft, .navText, #logoScript {
+  display: flex;
+  align-items: center;
 }
 
 .button {
