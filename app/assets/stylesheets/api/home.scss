@@ -1,0 +1,22 @@
+.banner h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.banner {
+  z-index: -1;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-image: url(https://res.cloudinary.com/wiigo/image/upload/v1490140132/banner1_croped_darkened_gavqfh.jpg);
+  background-size: cover;
+  height: 462px;
+  background-color: black;
+  border-bottom: 2px solid #e2e2e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
