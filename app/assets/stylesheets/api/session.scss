@@ -5,7 +5,7 @@
 .auth {
 	display: flex;
 	justify-content: center;
-	height: 800px;
+	height: 100vh;
 }
 
 .auth>* {
@@ -17,6 +17,8 @@
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
 	border: 1px solid rgba(0,0,0,.12);
+	position: relative;
+	top: -20%;
 }
 
 .auth header {

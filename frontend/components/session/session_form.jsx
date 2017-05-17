@@ -34,6 +34,12 @@ class SessionForm extends React.Component {
       errors = this.props.errors.map( (error, idx) => <p key={idx}>{error}</p>);
     }
 
+    const switchText = this.props.formType === "login" ?
+    "Not yet Registered? "
+    : "Already Registered? ";
+
+    const switchLink = this.props.formType === "login" ? "Sign Up" : "Log In";
+
     return (
       <section className="auth">
         <section className="form">
@@ -41,13 +47,10 @@ class SessionForm extends React.Component {
           <header>
             <h1>{this.props.formType === "login" ? "Log In" : "Sign Up"}</h1>
             <span>
-              {this.props.formType === "login" ?
-              "Not yet Registered? "
-              : "Already Registered? "}
+                {switchText}
             </span>
             <Link to={`/${otherForm}`} >
-            {this.props.formType === "login" ?
-            "Sign Up" : "Log In"}
+              {switchLink}
             </Link>
           </header>
 
