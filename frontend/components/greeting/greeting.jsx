@@ -10,11 +10,6 @@ const sessionLinks = () => (
 
 const personalGreeting = (currentUser, logout) => (
   <hgroup>
-    <section className="navButtons">
-      <a className="button" href="/">Make Event</a>
-      <a className="button" href="/">Make Group</a>
-    </section>
-
     <h2>Hi, {currentUser.username}!</h2>
     <button onClick={logout}  className="button" >Log Out</button>
 	</hgroup>
