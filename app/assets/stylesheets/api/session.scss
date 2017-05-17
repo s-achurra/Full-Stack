@@ -5,6 +5,7 @@
 .auth {
 	display: flex;
 	justify-content: center;
+	height: 80%;
 }
 
 .auth>* {
@@ -35,8 +36,36 @@
 	font-weight: 500;
 	font-size: 42px;
 	line-height: 1.25;
+	margin-bottom: 10px;
 }
 
 .auth {
 	background-color: #f2f2f2;
+}
+
+.auth .button {
+	max-width: 100px;
+}
+
+.auth * {
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.auth a {
+	text-decoration: none;
+	color: #1f24cc;
+}
+
+.auth input {
+	display: block;
+	line-height: 1.45;
+	padding: 4px;
+	font-size: 16px;
+	width: auto;
+	margin-bottom: 16px;
+	color: rgba(0,0,0,.87);
+	border: 1px solid rgba(0,0,0,.12);
+	border-radius: 3px;
+	background-color: #fafafa;
 }

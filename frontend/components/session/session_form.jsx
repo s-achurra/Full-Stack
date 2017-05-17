@@ -37,6 +37,7 @@ class SessionForm extends React.Component {
     return (
       <section className="auth">
         <section className="form">
+
           <header>
             <h1>{this.props.formType === "login" ? "Log In" : "Sign Up"}</h1>
             <span>
@@ -48,11 +49,7 @@ class SessionForm extends React.Component {
             {this.props.formType === "login" ?
             "Sign Up" : "Log In"}
             </Link>
-
           </header>
-
-
-
 
           <form onSubmit={this.handleSubmit}>
             <div>
@@ -67,7 +64,7 @@ class SessionForm extends React.Component {
               </p>
               <input type='password' value={this.state.password} onChange={this.update('password')} />
             </div>
-            <button>Submit</button>
+            <button className="button">Submit</button>
             {errors}
           </form>
         </section>
