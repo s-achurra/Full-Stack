@@ -5,16 +5,18 @@
 .auth {
 	display: flex;
 	justify-content: center;
-	height: 80%;
+	height: 800px;
 }
 
 .auth>* {
-	margin-top: 60px;
+	width: 50%;
+}
+
+.auth header, .auth form {
 	background-color: white;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
 	border: 1px solid rgba(0,0,0,.12);
-	width: 50%;
 }
 
 .auth header {
