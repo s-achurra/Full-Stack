@@ -1,6 +1,7 @@
 class Api::GroupsController < ApplicationController
 
-  before_action :require_logged_in, only: [:create]
+  # before_action :require_logged_in, only: [:create]
+  # TODO: enable require logged_in or setup on frontend
 
   def index
     @groups = Group.all
@@ -13,7 +14,7 @@ class Api::GroupsController < ApplicationController
   def create
     @group = Group.new(group_params)
 
-    if @group.save
+    if @group.save!
       render :show
     else
       render json: @group.errors.full_messages, status: 422
