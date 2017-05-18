@@ -44,13 +44,13 @@ MeetApp is a social website focused on bringing people together for face-to-face
 
 **Objective:** Functioning rails project with front-end Authentication
 
-### Phase 2: Events (2 days)
+### Phase 2: Group Model, API, and components (2 days)
 
-**Objective:** Events belong to a User and can be created, joined, edited and destroyed through the API.
+**Objective:** Group can be created, joined, edited and destroyed through the API and belong to a User.
 
-### Phase 3: Group Model, API, and components (2 days)
+### Phase 3: Events (2 days)
 
-**Objective:** Group can be created, joined, edited and destroyed through the API.
+**Objective:** Events belong to a Group and can be created, joined, edited and destroyed through the API.
 
 ### Phase 4: Search (1 day)
 

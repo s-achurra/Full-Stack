@@ -30,7 +30,7 @@ class Home extends React.Component {
       <div>
         <section className="banner">
           <div className="bannerText">
-            <h1>Where will MeetUp today?</h1>
+            <h1>Where will you MeetUp today?</h1>
           </div>
         </section>
         
@@ -68,11 +68,11 @@ class Home extends React.Component {
                 </li>
                 <li>
                   <section className="placeholderCategory Family"></section>
-                  <h4>category</h4>
+                  <h4>Family</h4>
                 </li>
                 <li>
                   <section className="placeholderCategory Sports"></section>
-                  <h4>category</h4>
+                  <h4>Helth</h4>
                 </li>
               </ul>
             </section>
