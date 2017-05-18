@@ -19,6 +19,8 @@ column name | data type | details
 id          | integer   | not null, primary key
 title       | string    | not null
 description | text      | not null
+location    | string    |
+category    | string    |
 owner_id    | integer   | not null, foreign key (references users), indexed
 
 ## events
@@ -29,10 +31,10 @@ host_id     | integer   | not null, foreign key (references users), indexed
 group_id    | integer   | not null, foreign key (references groups), indexed
 title       | string    | not null
 description | text      | not null
-location    | text      | not null
-date        | text      | not null
-start_time  | text      | not null
-end_time    | text      | not null
+location    | string    | not null
+date        | date      | not null
+start_time  | time      | not null
+end_time    | time      | not null
 image_link  | text      |
 
 ## rsvps
