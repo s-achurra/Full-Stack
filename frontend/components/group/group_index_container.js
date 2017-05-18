@@ -1,12 +1,12 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { fetchAllGroups, deleteGroup } from '../../actions/post_actions';
-import { selectAllGroups } from '../../reducers/selectors';
-import GroupIndex from './post_index';
+import { fetchAllGroups, deleteGroup } from '../../actions/group_actions';
+import { selectAllGroups } from '../../reducers/group_selectors';
+import GroupIndex from './group_index';
 
 const mapStateToProps = state => ({
-  posts: selectAllGroups(state)
+  groups: selectAllGroups(state)
 });
 
 const mapDispatchToProps = dispatch => ({

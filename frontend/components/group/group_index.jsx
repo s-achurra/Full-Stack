@@ -10,7 +10,7 @@ class GroupIndex extends React.Component {
     this.deleteGroup = this.deleteGroup.bind(this);
   }
 
-  componentDidMount() {
+  componentWillMount() {
     this.props.fetchAllGroups();
   }
 
@@ -21,18 +21,9 @@ class GroupIndex extends React.Component {
 
   render() {
 
-    let generateGroup = this.props.groups.map( group =>
-      <li key={`${group.id}`}>
-        <Link to={`group/${group.id}`}>
-          {group.title}
-        </Link>
-        <br/>
-        <Link to={`group/edit/${group.id}`} className="edit">
-          Edit
-        </Link>
-        <button className="button" id={`${group.id}`} onClick={this.deleteGroup}>Delete</button>
-      </li>
-    );
+    if (this.props.groups === undefined) {
+      return ( <div>loading...</div> )
+    }
 
     if (this.props.groups) {
       return (
@@ -40,9 +31,9 @@ class GroupIndex extends React.Component {
           <h1>All Groups</h1>
           <section className="indexColumns">
             <ul>
-              {generateGroup}
+              {this.props.groups.map(group => <GroupIndexItem
+                key={group.id} group={group} />)}
             </ul>
-            <GroupCreateContainer />
           </section>
         </div>
       );

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 class Home extends React.Component {
   constructor(props) {
@@ -11,17 +11,17 @@ class Home extends React.Component {
   }
 
   categories() {
-      
+
       <ul>
         <li class="gridList-item">
           <a class="categoryLink" href="https://www.meetup.com/find/outdoors-adventure/">
-            
+
             <div class="categoryImg keepAspect" style="background-image: url(https://secure.meetupstatic.com/photos/event/2/e/a/7/event_450131943.jpeg);"></div>
             <h4 class="text--heavy">Outdoors &amp; Adventure</h4>
           </a>
         </li>
       </ul>
-    
+
   }
 
 
@@ -33,7 +33,7 @@ class Home extends React.Component {
             <h1>Where will you MeetUp today?</h1>
           </div>
         </section>
-        
+
         <section className="categoriesMain">
           <h1>Categories</h1>
             <section className="categoryIconsMain">
@@ -77,6 +77,10 @@ class Home extends React.Component {
               </ul>
             </section>
         </section>
+        <section className="linkToGroups">
+          <Link to="./groups"><h1>Explore Groups!</h1></Link>
+        </section>
+
       </div>
     );
   }
