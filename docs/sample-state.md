@@ -49,13 +49,15 @@
   group: {
     1: {
       title: "Redux",
-      creator_id: 1,
+      owner_id: 1,
       description: "is cool",
+      category: "type",
+      location: "place",
       events: {
         1: {
           event_id: 1
         }
-      }
+      },
       members: {
         1: {
           member_id: 1
