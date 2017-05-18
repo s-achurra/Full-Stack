@@ -8,7 +8,7 @@ class GroupForm extends React.Component {
       title: '',
       description: '',
       location: '',
-      category: 'Outdoors',
+      category: '',
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.update = this.update.bind(this);
@@ -26,7 +26,7 @@ class GroupForm extends React.Component {
       title: '',
       description: '',
       location: '',
-      category: 'Outdoors',
+      category: '',
     });
   }
 
@@ -65,6 +65,7 @@ class GroupForm extends React.Component {
           <select
             value={this.state.category}
             onChange={this.update('category')}>
+            <option value="" disabled defaultValue>Select a Category</option>
             <option value="Outdoors">Outdoors</option>
             <option value="Tech">Tech</option>
             <option value="Health">Health</option>
