@@ -58,5 +58,57 @@
   border: 1px solid black;
   width: 200px;
   height: 100px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
+// Category Data
+
+
+.Outdoors {
+  background-image: url(https://secure.meetupstatic.com/photos/event/2/e/a/7/event_450131943.jpeg);
+}
+
+.Tech {
+  background-image: url(https://secure.meetupstatic.com/photos/event/2/e/a/d/event_450131949.jpeg);
+}
+
+.Family {
+  background-image: url(https://secure.meetupstatic.com/photos/event/2/e/9/c/event_450131932.jpeg);
+}
+.Health {
+  background-image: url(https://secure.meetupstatic.com/photos/event/2/e/a/e/event_450131950.jpeg);
+}
+.Sports {
+  background-image: url(https://secure.meetupstatic.com/photos/event/2/e/a/c/event_450131948.jpeg);
+}
+.Learning {
+  background-image: url(https://secure.meetupstatic.com/photos/event/2/e/9/b/event_450131931.jpeg);
+}
+.Photography {
+  background-image: url(https://secure.meetupstatic.com/photos/event/2/e/a/a/event_450131946.jpeg);
+}
+.Food {
+  background-image: url(https://secure.meetupstatic.com/photos/event/2/e/a/1/event_450131937.jpeg);
+}
+.Writing {
+  background-image: url(https://secure.meetupstatic.com/photos/event/2/e/a/f/event_450131951.jpeg);
+}
+.Language {
+  background-image: url(https://secure.meetupstatic.com/photos/event/2/e/a/3/event_450131939.jpeg);
+}
+
+
+		
+
+
+		
+			// <li class="gridList-item">
+			// 	<a class="categoryLink" href="https://www.meetup.com/find/language/">
+					
+			// 		<div class="categoryImg keepAspect" style="background-image: url(https://secure.meetupstatic.com/photos/event/2/e/a/3/event_450131939.jpeg);"></div>
+			// 		<h4 class="text--heavy">Language &amp; Culture</h4>
+			// 	</a>
+			// </li>
+		
