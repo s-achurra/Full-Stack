@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   end
 
   namespace :api, defaults: { format: :json } do
-    resources :groups
+    resources :groups, except: [:new, :edit]
   end
 
   root to: 'static_pages#root'
