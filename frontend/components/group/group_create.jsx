@@ -8,7 +8,7 @@ class GroupForm extends React.Component {
       title: '',
       description: '',
       location: '',
-      category: '',
+      category: 'Outdoors',
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.update = this.update.bind(this);
@@ -20,12 +20,13 @@ class GroupForm extends React.Component {
 
   handleSubmit(e) {
   e.preventDefault();
-  this.props.createPost(this.state)
+  console.log(this.state);
+  this.props.createGroup(this.state)
     .then(this.state = {
       title: '',
       description: '',
       location: '',
-      category: '',
+      category: 'Outdoors',
     });
   }
 
@@ -43,7 +44,6 @@ class GroupForm extends React.Component {
               onChange={this.update('title')}
             />
 
-          <br />
 
           <span>Description</span>
             <input
@@ -52,7 +52,6 @@ class GroupForm extends React.Component {
               onChange={this.update('description')}
             />
 
-            <br />
 
           <span>Location</span>
             <input
@@ -61,16 +60,21 @@ class GroupForm extends React.Component {
               onChange={this.update('location')}
             />
 
-            <br />
 
           <span>Category</span>
-            <input
-              type="text"
-              value={this.state.category}
-              onChange={this.update('category')}
-            />
-
-            <br />
+          <select
+            value={this.state.category}
+            onChange={this.update('category')}>
+            <option value="Outdoors">Outdoors</option>
+            <option value="Tech">Tech</option>
+            <option value="Health">Health</option>
+            <option value="Learning">Learning</option>
+            <option value="Food">Food</option>
+            <option value="Writing">Writing</option>
+            <option value="Language">Language</option>
+            <option value="Family">Family</option>
+            <option value="Health">Health</option>
+          </select>
 
           <input className="button" type="submit" value="Submit"/>
         </form>
