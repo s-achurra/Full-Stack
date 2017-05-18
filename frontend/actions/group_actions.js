@@ -7,7 +7,7 @@ export const UPDATE_GROUP = 'UPDATE_GROUP';
 export const RECEIVE_ALL_GROUPS = 'RECEIVE_ALL_GROUPS';
 export const RECEIVE_GROUP = 'RECEIVE_GROUP';
 export const RECEIVE_NEW_GROUP = 'RECEIVE_NEW_GROUP';
-
+export const RECEIVE_ERRORS = "RECEIVE_ERRORS";
 
 import * as APIUtil from '../util/group_api_util';
 
@@ -22,7 +22,8 @@ export const fetchGroup = id => dispatch => (
 );
 
 export const createGroup = group => dispatch => (
-  APIUtil.createGroup(group).then(dispatch(fetchAllGroups()))
+  APIUtil.createGroup(group).then(dispatch(fetchAllGroups()),
+  err => dispatch(receiveErrors(err.responseJSON)))
 );
 
 export const updateGroup = group => dispatch => (
@@ -49,4 +50,9 @@ export const receiveGroup = (group) => ({
 export const receiveNewGroup = (group) => ({
   type: RECEIVE_NEW_GROUP,
   group
+});
+
+export const receiveErrors = errors => ({
+  type: RECEIVE_ERRORS,
+  errors
 });

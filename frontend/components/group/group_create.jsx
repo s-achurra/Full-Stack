@@ -32,7 +32,15 @@ class GroupForm extends React.Component {
 
 
   render() {
+
+    let errors;
+    if (this.props.errors) {
+      errors = this.props.errors.map( (error, idx) => <p key={idx}>{error}</p>);
+    }
+    // TODO: Errors aren't working
+
     return(
+
       <section className="form">
         <h3>Create a Group</h3>
         <form onSubmit={this.handleSubmit}>
@@ -54,11 +62,11 @@ class GroupForm extends React.Component {
 
 
           <span>Location</span>
-            <input
-              type="text"
-              value={this.state.location}
-              onChange={this.update('location')}
-            />
+            <textarea
+            value={this.state.location}
+            onChange={this.update('location')}>
+
+            </textarea>
 
 
           <span>Category</span>
@@ -78,6 +86,7 @@ class GroupForm extends React.Component {
           </select>
 
           <input className="button" type="submit" value="Submit"/>
+          {errors}
         </form>
       </section>
     );
