@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
+import * as GroupActions from './actions/group_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
     const root = document.getElementById('root');
@@ -16,6 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       store = configureStore();
     }
+
+    window.store = store;
+    window.fetchAllGroups = GroupActions.fetchAllGroups;
 
     ReactDOM.render(<Root store={ store }/>, root);
 });
