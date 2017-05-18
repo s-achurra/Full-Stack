@@ -1,0 +1,26 @@
+.footerMain {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  background-color: black;
+}
+
+.footerContents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  width: 60%;
+  background-color: red;
+  color: white;
+}
+
+.footerContents ul {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: space-around;
+  width: 100%;
+}
+
+
