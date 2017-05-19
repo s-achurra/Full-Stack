@@ -8,11 +8,12 @@ class GroupDetail extends React.Component {
   }
 
   render() {
-    // if (this.props.group.group === undefined) {
-    //   return ( <div>loading...</div> )
-    // }
+    if (this.props.group === undefined) {
+      return ( <div>loading...</div> )
+    }
 
     if (this.props.group) {
+      debugger
       return (
         <section className="detail">
           <h1>{this.props.group.title}</h1>
