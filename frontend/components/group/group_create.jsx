@@ -21,7 +21,6 @@ class GroupForm extends React.Component {
 
   handleSubmit(e) {
   e.preventDefault();
-  console.log(this.state);
   this.props.createGroup(this.state)
     .then(group => window.location.href=`/#/group/${group.id}`);
   }
