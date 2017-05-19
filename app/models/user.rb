@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
 
   attr_reader :password
 
-	after_initialize :ensure_session_token
+	after_initialize :ensure_session_token, :set_default_image
 	before_validation :ensure_session_token_uniqueness
 
 	has_many :groups
@@ -47,6 +47,10 @@ class User < ActiveRecord::Base
 		while User.find_by(session_token: self.session_token)
 			self.session_token = new_session_token
 		end
+	end
+
+	def set_default_image
+		self.image_url ||= "https://upload.wikimedia.org/wikipedia/en/b/b1/Portrait_placeholder.png"
 	end
 
 end

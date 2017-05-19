@@ -21,6 +21,9 @@ class GroupForm extends React.Component {
 
   handleSubmit(e) {
   e.preventDefault();
+  if (this.state.image_url === '') {
+    this.state.image_url = "https://secure.meetupstatic.com/s/img/041003812446967856280/logo/svg/logo--script.svg";
+  }
   this.props.createGroup(this.state)
     .then(group => window.location.href=`/#/group/${group.id}`);
   }
