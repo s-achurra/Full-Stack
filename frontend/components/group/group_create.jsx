@@ -40,54 +40,57 @@ class GroupForm extends React.Component {
     // TODO: Errors aren't working
 
     return(
+      <section className="createGroup">
+        <section className="form">
+          <header>
+            <h1>Create a Group</h1>
+          </header>
+          <form>
 
-      <section className="form">
-        <h3>Create a Group</h3>
-        <form onSubmit={this.handleSubmit}>
-
-          <span>Title</span>
-            <input
-              type="text"
-              value={this.state.title}
-              onChange={this.update('title')}
-            />
+            <span>Title</span>
+              <input
+                type="text"
+                value={this.state.title}
+                onChange={this.update('title')}
+              />
 
 
-          <span>Description</span>
-            <input
-              type="text"
+            <span>Location</span>
+              <input
+                type="text"
+                value={this.state.location}
+                onChange={this.update('location')}
+              />
+
+
+            <span>Description</span>
+              <textarea
               value={this.state.description}
-              onChange={this.update('description')}
-            />
+              onChange={this.update('description')}>
+
+              </textarea>
 
 
-          <span>Location</span>
-            <textarea
-            value={this.state.location}
-            onChange={this.update('location')}>
+            <span>Category</span>
+            <select
+              value={this.state.category}
+              onChange={this.update('category')}>
+              <option value="" disabled defaultValue>Select a Category</option>
+              <option value="Outdoors">Outdoors</option>
+              <option value="Tech">Tech</option>
+              <option value="Health">Health</option>
+              <option value="Learning">Learning</option>
+              <option value="Food">Food</option>
+              <option value="Writing">Writing</option>
+              <option value="Language">Language</option>
+              <option value="Family">Family</option>
+              <option value="Health">Health</option>
+            </select>
 
-            </textarea>
-
-
-          <span>Category</span>
-          <select
-            value={this.state.category}
-            onChange={this.update('category')}>
-            <option value="" disabled defaultValue>Select a Category</option>
-            <option value="Outdoors">Outdoors</option>
-            <option value="Tech">Tech</option>
-            <option value="Health">Health</option>
-            <option value="Learning">Learning</option>
-            <option value="Food">Food</option>
-            <option value="Writing">Writing</option>
-            <option value="Language">Language</option>
-            <option value="Family">Family</option>
-            <option value="Health">Health</option>
-          </select>
-
-          <input className="button" type="submit" value="Submit"/>
-          {errors}
-        </form>
+            <button className="button" onClick={this.handleSubmit}>Create Group</button>
+            {errors}
+          </form>
+        </section>
       </section>
     );
   }

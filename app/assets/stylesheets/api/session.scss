@@ -2,21 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.auth {
+// Form style
+
+.auth, .createGroup {
 	display: flex;
 	justify-content: center;
-	height: 100vh;
+	min-height: 100vh;
 }
 
-.auth>* {
+.auth>*, .createGroup>* {
 	width: 50%;
 }
 
-.auth .form {
+.auth .form, .createGroup .form {
 	max-width: 480px;
 }
 
-.auth header, .auth form {
+.auth header, .auth form, .createGroup header, .createGroup form {
 	background-color: white;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
@@ -25,7 +27,7 @@
 	top: -20%;
 }
 
-.auth header {
+.auth header, .createGroup header {
 	padding: 16px;
 	border: 1px solid rgba(0,0,0,.12);
 }
@@ -39,7 +41,7 @@
 	height: 300px;
 }
 
-.auth h1 {
+.auth h1, .createGroup h1 {
 	color: #E51937;
 	font-weight: 500;
 	font-size: 42px;
@@ -47,25 +49,25 @@
 	margin-bottom: 10px;
 }
 
-.auth {
+.auth, .createGroup {
 	background-color: #f2f2f2;
 }
 
-.auth .button {
+.auth .button, .createGroup .button {
 	max-width: 100px;
 }
 
-.auth * {
+.auth *, .createGroup * {
 	font-weight: 600;
 	font-size: 14px;
 }
 
-.auth a {
+.auth a, .createGroup a {
 	text-decoration: none;
 	color: #1f24cc;
 }
 
-.auth input {
+.auth input, .createGroup input {
 	display: block;
 	line-height: 1.45;
 	padding: 4px;
@@ -76,4 +78,25 @@
 	border: 1px solid rgba(0,0,0,.12);
 	border-radius: 3px;
 	background-color: #fafafa;
+}
+
+
+// Group Form Style
+
+.createGroup form {
+	padding: 16px;
+	border: 1px solid rgba(0,0,0,.12);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 400px;
+}
+
+.createGroup textarea {
+	height: 100px;
+}
+
+.createGroup .button {
+	margin-top: 16px;
+	font-size: 16px;
 }
