@@ -74,7 +74,7 @@ class Home extends React.Component {
             </section>
         </section>
         <section className="linkToGroups">
-          <Link to="./groups"><h1>Explore Groups!</h1></Link>
+          <Link className="exploreGroupsLink" to="/groups"><h1>Explore Groups!</h1></Link>
         </section>
 
       </div>

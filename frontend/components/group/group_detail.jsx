@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 
 class GroupDetail extends React.Component {
 
@@ -22,24 +22,25 @@ class GroupDetail extends React.Component {
             <section className="groupColumns">
 
               <section className="groupDetailLeft">
-                <div>left section</div>
-                <label>Location:</label>
-                <h3>{this.props.group.location}</h3>
-                <label>Category:</label>
-                <h3>{this.props.group.category}</h3>
+                <h3>Location: </h3>
+                <p>{this.props.group.location}</p>
+                <h3>Category: </h3>
+                <p>{this.props.group.category}</p>
               </section>
 
               <section className="groupDetailRight">
                 <section className="groupDetails">
-                <label>Group Description:</label>
-                  <h3>{this.props.group.description}</h3>
+                <h3>Group Description:</h3>
+                  <p>{this.props.group.description}</p>
                 </section>
                 <section className="groupEventsList">
-                  <div>Events List</div>
+                  <h3>Events List</h3>
                 </section>
               </section>
 
             </section>
+
+            <Link className="exploreGroupsLink" to="/groups"><h1>Explore Groups!</h1></Link>
 
         </section>
       );

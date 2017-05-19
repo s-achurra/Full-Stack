@@ -10,7 +10,6 @@
 
 .groupDetailPage * {
   margin: 20px;
-  border: 1px solid black;
 }
 
 .groupDetailHeader {
@@ -30,12 +29,52 @@
   flex-direction: row;
   width: 60%;
   background-color: white;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  min-height: 800px;
+}
+
+.groupColumns>* {
+  background-color: white;
+  margin: 0;
+
 }
 
 .groupDetailLeft {
   flex: 1;
+  margin-right: 10px;
+  border: 1px solid black;
 }
 
 .groupDetailRight {
   flex: 3;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.groupDetailPage h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.groupDetail p {
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.groupDetails, .groupEventsList {
+  border: 1px solid black;
+  margin: 0;
+  padding: 10px;
+}
+
+.groupDetails {
+  margin-bottom: 10px;
+}
+
+.groupEventsList {
+  height: 100%;
 }
