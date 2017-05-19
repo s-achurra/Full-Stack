@@ -22,12 +22,7 @@ class GroupForm extends React.Component {
   e.preventDefault();
   console.log(this.state);
   this.props.createGroup(this.state)
-    .then(this.state = {
-      title: '',
-      description: '',
-      location: '',
-      category: '',
-    });
+    .then(group => window.location.href=`/#/group/${group.id}`);
   }
 
 
