@@ -1,9 +1,7 @@
 import merge from 'lodash/merge';
 
 import {
-  RECEIVE_ALL_GROUPS,
   RECEIVE_GROUP,
-  RECEIVE_NEW_GROUP,
   RECEIVE_ERRORS
 } from '../actions/group_actions';
 
