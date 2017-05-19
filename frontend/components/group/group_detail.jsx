@@ -22,6 +22,7 @@ class GroupDetail extends React.Component {
             <section className="groupColumns">
 
               <section className="groupDetailLeft">
+                <img className="groupImage" src={this.props.group.image_url}/>
                 <h3>Location: </h3>
                 <p>{this.props.group.location}</p>
                 <h3>Category: </h3>

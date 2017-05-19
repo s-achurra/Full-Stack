@@ -40,35 +40,35 @@ class Home extends React.Component {
             <section className="categoryIconsMain">
               <ul className="categoryIconsList">
                 <li>
-                  <section className="placeholderCategory Outdoors"></section>
+                  <section className="homeCategory Outdoors"></section>
                   <h4>Outdoors</h4>
                 </li>
                 <li>
-                  <section className="placeholderCategory Tech"></section>
+                  <section className="homeCategory Tech"></section>
                   <h4>Tech</h4>
                 </li>
                 <li>
-                  <section className="placeholderCategory Health"></section>
+                  <section className="homeCategory Health"></section>
                   <h4>Health</h4>
                 </li>
                 <li>
-                  <section className="placeholderCategory Learning"></section>
+                  <section className="homeCategory Learning"></section>
                   <h4>Learning</h4>
                 </li>
                 <li>
-                  <section className="placeholderCategory Food"></section>
+                  <section className="homeCategory Food"></section>
                   <h4>Food</h4>
                 </li>
                 <li>
-                  <section className="placeholderCategory Writing"></section>
+                  <section className="homeCategory Writing"></section>
                   <h4>Writing</h4>
                 </li>
                 <li>
-                  <section className="placeholderCategory Language"></section>
+                  <section className="homeCategory Language"></section>
                   <h4>Language</h4>
                 </li>
                 <li>
-                  <section className="placeholderCategory Family"></section>
+                  <section className="homeCategory Family"></section>
                   <h4>Family</h4>
                 </li>
               </ul>

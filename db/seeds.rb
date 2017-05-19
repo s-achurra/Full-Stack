@@ -53,7 +53,7 @@ Group.create!(
   location: "SF",
   image_url: "https://upload.wikimedia.org/wikipedia/commons/1/19/Overhanging_rock_climbing.jpg"
 )
-# ------------------------------------
+
 Group.create!(
   title: "Italian Cooking",
   description: "This group is dedicated to learning about Italian cooking",
