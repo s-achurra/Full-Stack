@@ -2,9 +2,19 @@ import React from 'react';
 import { Route, Link } from 'react-router-dom';
 
 class GroupDetail extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleDelete = this.handleDelete.bind(this);
+  }
 
   componentWillMount() {
     this.props.fetchGroup(parseInt(this.props.match.params.id));
+  }
+
+  handleDelete(e) {
+    e.preventDefault();
+    this.props.deleteGroup(e.target.id)
+      .then(window.location.href="#/groups");
   }
 
   render() {
@@ -39,6 +49,10 @@ class GroupDetail extends React.Component {
                 </section>
               </section>
 
+            </section>
+
+            <section className="groupDetailButtons">
+              <button className="button" id={`${this.props.group.id}`} onClick={this.handleDelete}>Delete Group</button>
             </section>
 
         </section>
