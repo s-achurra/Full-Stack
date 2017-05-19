@@ -70,10 +70,6 @@ class Home extends React.Component {
                   <section className="placeholderCategory Family"></section>
                   <h4>Family</h4>
                 </li>
-                <li>
-                  <section className="placeholderCategory Sports"></section>
-                  <h4>Helth</h4>
-                </li>
               </ul>
             </section>
         </section>

@@ -9,6 +9,7 @@ class SessionForm extends React.Component {
       password: ""
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.guestLogin = this.guestLogin.bind(this);
   }
 
   componentWillReceiveProps(props) {
@@ -27,6 +28,12 @@ class SessionForm extends React.Component {
     return (e => this.setState({[property]: e.target.value}));
   }
 
+    guestLogin (e) {
+      this.state.username = "Guest";
+      this.state.password = "password";
+      setTimeout( this.handleSubmit(e), 2000 );
+    }
+
   render() {
     const otherForm = (this.props.formType === "login") ? 'signup' : 'login';
     let errors;
@@ -39,6 +46,12 @@ class SessionForm extends React.Component {
     : "Already Registered? ";
 
     const switchLink = this.props.formType === "login" ? "Sign Up" : "Log In";
+
+
+    let guestButton;
+    guestButton = (
+    <button className="button" onClick={this.guestLogin}>Guest</button>
+    );
 
     return (
       <section className="auth">
@@ -54,7 +67,7 @@ class SessionForm extends React.Component {
             </Link>
           </header>
 
-          <form onSubmit={this.handleSubmit}>
+          <form>
             <div>
               <p>
                 User Name:
@@ -67,7 +80,10 @@ class SessionForm extends React.Component {
               </p>
               <input type='password' value={this.state.password} onChange={this.update('password')} />
             </div>
-            <button className="button">Submit</button>
+            <section className="formButtons">
+              <button className="button"  onClick={this.handleSubmit}>Submit</button>
+              {this.props.formType === "login" ? guestButton : ""}
+            </section>
             {errors}
           </form>
         </section>
