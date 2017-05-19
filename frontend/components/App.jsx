@@ -14,7 +14,8 @@ const App = () => (
   <div>
     <nav>
       <section className="navLeft">
-        <Link to="/group/new" className="navText">Make Group</Link>
+        <Link to="/group/new" className="navText">Make Groups</Link>
+        <Link className="exploreGroupsLink" to="/groups">Explore Groups</Link>
       </section>
       <LogoContainer />
       <GreetingContainer />

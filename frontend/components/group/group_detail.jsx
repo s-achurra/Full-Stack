@@ -40,8 +40,6 @@ class GroupDetail extends React.Component {
 
             </section>
 
-            <Link className="exploreGroupsLink" to="/groups"><h1>Explore Groups!</h1></Link>
-
         </section>
       );
     }
