@@ -1,3 +1,41 @@
 // Place all the styles related to the api/groups controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.groupDetailPage {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.groupDetailPage * {
+  margin: 20px;
+  border: 1px solid black;
+}
+
+.groupDetailHeader {
+  width: 60%;
+  background-color: #ed1c40;
+}
+
+.groupDetailHeader h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+.groupColumns {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  background-color: white;
+}
+
+.groupDetailLeft {
+  flex: 1;
+}
+
+.groupDetailRight {
+  flex: 3;
+}

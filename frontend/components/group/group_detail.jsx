@@ -12,11 +12,35 @@ class GroupDetail extends React.Component {
       return ( <div>loading...</div> )
     } else {
       return (
-        <section className="detail">
-        <h1>{this.props.group.title}</h1>
-        <h3>{this.props.group.description}</h3>
-        <h3>{this.props.group.location}</h3>
-        <h3>{this.props.group.category}</h3>
+        <section className="groupDetailPage">
+
+
+            <header className="groupDetailHeader">
+              <h1>{this.props.group.title}</h1>
+            </header>
+
+            <section className="groupColumns">
+
+              <section className="groupDetailLeft">
+                <div>left section</div>
+                <label>Location:</label>
+                <h3>{this.props.group.location}</h3>
+                <label>Category:</label>
+                <h3>{this.props.group.category}</h3>
+              </section>
+
+              <section className="groupDetailRight">
+                <section className="groupDetails">
+                <label>Group Description:</label>
+                  <h3>{this.props.group.description}</h3>
+                </section>
+                <section className="groupEventsList">
+                  <div>Events List</div>
+                </section>
+              </section>
+
+            </section>
+
         </section>
       );
     }
