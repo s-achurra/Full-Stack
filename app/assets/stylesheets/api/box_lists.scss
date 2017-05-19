@@ -1,0 +1,85 @@
+.categoriesMain, .groupIndex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.categoriesMain h1, .groupIndexHeader h1 {
+  font-size: 40px;
+}
+
+.categoryIconsMain, .groupIndexList {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.categoryIconsList, .groupIndexList ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 950px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.categoryIconsList li, .groupIndexList li{
+  margin: 16px;
+}
+
+.placeholderCategory, .groupImage {
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.groupIndexList a {
+  text-decoration: none;
+  color: black;
+}
+
+// Group Index Specific
+
+.groupIndex {
+  margin-top: 20px;
+}
+
+// Category Image Links
+
+
+.Outdoors {
+  background-image: url(https://static.pexels.com/photos/196464/pexels-photo-196464.jpeg);
+}
+
+.Tech {
+  background-image: url(https://static.pexels.com/photos/90807/pexels-photo-90807.jpeg);
+}
+
+.Family {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/df/Family_Portrait.jpg);
+  background-position: top;
+}
+.Health {
+  background-image: url(https://cdn.pixabay.com/photo/2016/12/29/17/00/cycling-1938927_960_720.jpg);
+}
+.Sports {
+  background-image: url(https://secure.meetupstatic.com/photos/event/2/e/a/c/event_450131948.jpeg);
+}
+.Learning {
+  background-image: url(http://soft9000.com/blog9000/images/AllSenses.png);
+}
+.Food {
+  background-image: url(https://static.pexels.com/photos/8313/food-eating-potatoes-beer-8313.jpg);
+}
+.Writing {
+  background-image: url(https://cdn.pixabay.com/photo/2015/11/09/14/17/machine-writing-1035292_960_720.jpg);
+}
+.Language {
+  background-image: url(https://cdn.pixabay.com/photo/2016/07/07/12/08/hello-1502369_960_720.png);
+}

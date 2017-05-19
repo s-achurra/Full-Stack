@@ -85,7 +85,6 @@ class GroupForm extends React.Component {
               <option value="Writing">Writing</option>
               <option value="Language">Language</option>
               <option value="Family">Family</option>
-              <option value="Health">Health</option>
             </select>
 
             <button className="button" onClick={this.handleSubmit}>Create Group</button>

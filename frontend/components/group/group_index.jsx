@@ -28,7 +28,9 @@ class GroupIndex extends React.Component {
     if (this.props.groups) {
       return (
         <section className="groupIndex">
-          <h1>All Groups</h1>
+          <section className="groupIndexHeader">
+            <h1>All Groups</h1>
+          </section>
           <section className="groupIndexList">
             <ul>
               {this.props.groups.map(group => <GroupIndexItem
