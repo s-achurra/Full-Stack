@@ -27,15 +27,15 @@ class GroupIndex extends React.Component {
 
     if (this.props.groups) {
       return (
-        <div className="index">
+        <section className="groupIndex">
           <h1>All Groups</h1>
-          <section className="indexColumns">
+          <section className="groupIndexList">
             <ul>
               {this.props.groups.map(group => <GroupIndexItem
                 key={group.id} group={group} />)}
             </ul>
           </section>
-        </div>
+        </section>
       );
     }
   }
