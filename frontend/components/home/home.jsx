@@ -30,7 +30,8 @@ class Home extends React.Component {
       <div>
         <section className="banner">
           <div className="bannerText">
-            <h1>Where will you MeetUp today?</h1>
+            <h1>Where will you MeetUp?</h1>
+            <h2>Join Groups. Create Events. Meetup!</h2>
           </div>
         </section>
 

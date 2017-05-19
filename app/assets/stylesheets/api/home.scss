@@ -1,8 +1,13 @@
-.banner h1 {
-  color: #ed1c40;
+.banner h1, .banner h2 {
+  color: white;
   font-size: 80px;
   font-weight: 600;
   text-align: center;
+  text-shadow: 3px 3px #000000;
+}
+
+.banner h2 {
+  font-size: 40px;
 }
 
 .banner {
