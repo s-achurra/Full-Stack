@@ -3,19 +3,23 @@ import { Route } from 'react-router-dom';
 
 class GroupDetail extends React.Component {
 
-  componentDidMount() {
+  componentWillMount() {
     this.props.fetchGroup(parseInt(this.props.match.params.id));
   }
 
   render() {
-    return (
-      <section className="detail">
-        <h1>{this.props.group.title}</h1>
-        <h3>{this.props.group.description}</h3>
-        <h3>{this.props.group.location}</h3>
-        <h3>{this.props.group.category}</h3>
-      </section>
-    );
+
+    if (this.props.group) {
+      debugger
+      return (
+        <section className="detail">
+          <h1>{this.props.group.title}</h1>
+          <h3>{this.props.group.description}</h3>
+          <h3>{this.props.group.location}</h3>
+          <h3>{this.props.group.category}</h3>
+        </section>
+      );
+    }
   }
 }
 

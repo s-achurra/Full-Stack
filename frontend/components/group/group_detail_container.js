@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 import GroupDetail from './group_detail';
 import { fetchGroup } from '../../actions/group_actions';
 
-const mapStateToProps = ({groups}) => ({
-  groups
+const mapStateToProps = ({group}) => ({
+  group
 });
 
 const mapDispatchToProps = dispatch => ({

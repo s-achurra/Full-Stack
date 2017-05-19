@@ -2,7 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { fetchAllGroups, deleteGroup } from '../../actions/group_actions';
-import { selectAllGroups } from '../../reducers/group_selectors';
+import { selectAllGroups } from '../../selectors/group_selectors';
 import GroupIndex from './group_index';
 
 const mapStateToProps = state => ({

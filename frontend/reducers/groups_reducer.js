@@ -8,18 +8,21 @@ import {
 } from '../actions/group_actions';
 
 const defaultState = {
-  group: null,
+  groups: null,
   errors: []
 };
 
 const GroupsReducer = (state = defaultState, action) => {
   Object.freeze(state);
   switch (action.type) {
-    case RECEIVE_GROUP:
+    case RECEIVE_ALL_GROUPS:
       return {
-        group: action.group,
+        groups: action.groups,
         errors: []
       };
+    case RECEIVE_NEW_GROUP:
+      const newGroup = {[action.group.id]: action.group};
+      return merge({}, state, newGroup);
     case RECEIVE_ERRORS:
     return {
       groups: null,
