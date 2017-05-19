@@ -24,6 +24,7 @@ const App = () => (
     <Switch>
       <Route exact path='/group/new' component={GroupCreateContainer} />
       <Route exact path='/groups' component={GroupIndexContainer} />
+      <Route exact path='/groups/:category' component={GroupIndexContainer} />
       <Route exact path='/' component={HomeContainer} />
       <Route exact path='/group/:id' component={GroupDetailContainer} />
       <AuthRoute path='/login' component={SessionFormContainer} />
