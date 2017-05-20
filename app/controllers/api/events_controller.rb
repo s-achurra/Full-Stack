@@ -4,15 +4,15 @@ class Api::EventsController < ApplicationController
   # TODO: enable require logged_in or setup on frontend
 
   def index
-    @events = Group.all
+    @events = Event.all
   end
 
   def show
-    @event = Group.find(params[:id])
+    @event = Event.find(params[:id])
   end
 
   def create
-    @event = Group.new(event_params)
+    @event = Event.new(event_params)
     if @event.save!
       render :show
     else
@@ -21,7 +21,7 @@ class Api::EventsController < ApplicationController
   end
 
   def update
-    @event = Group.find(params[:id])
+    @event = Event.find(params[:id])
 
     if @event.update(event_params)
       render :show
@@ -31,7 +31,7 @@ class Api::EventsController < ApplicationController
   end
 
   def destroy
-    @event = Group.find(params[:id])
+    @event = Event.find(params[:id])
 
     if @event.destroy
       render :show

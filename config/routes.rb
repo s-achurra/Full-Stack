@@ -16,6 +16,16 @@ Rails.application.routes.draw do
     resources :events, except: [:new, :edit]
   end
 
+  namespace :api, defaults: { format: :json } do
+    resources :rsvps, only: [:create, :destroy]
+  end
+
+  namespace :api, defaults: { format: :json } do
+    resources :follows, only: [:create, :destroy]
+  end
+
+
+
   root to: 'static_pages#root'
 
 end
