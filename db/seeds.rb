@@ -44,7 +44,7 @@ Group.create!(
   description: "All skill levels welcome to prectice and perfect your Spanish skills.",
   category: "Language",
   location: "SF",
-  image_url: "https://cdn.pixabay.com/photo/2012/04/11/15/33/spain-28530_960_720.png"
+  image_url: "http://www.publicdomainpictures.net/pictures/180000/velka/spanish-flag-1464084072Hvb.jpg"
 )
 Group.create!(
   title: "HikeUp!",
@@ -73,7 +73,7 @@ Group.create!(
 Group.create!(
   title: "Parents for Parks",
   description: "Brind the whole family to the park while meeting other parents.",
-  category: "Health",
+  category: "Family",
   location: "SF",
   image_url: "https://upload.wikimedia.org/wikipedia/commons/6/60/Green_Park%2C_London_-_April_2007.jpg"
 )

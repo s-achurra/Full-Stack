@@ -46,32 +46,46 @@ class Home extends React.Component {
                   </Link>
                 </li>
                 <li>
-                  <section className="homeCategory Tech"></section>
-                  <h4>Tech</h4>
+                  <Link to="/groups/tech">
+                    <section className="homeCategory Tech"></section>
+                    <h4>Tech</h4>
+                  </Link>
                 </li>
                 <li>
-                  <section className="homeCategory Health"></section>
-                  <h4>Health</h4>
+                  <Link to="/groups/health">
+                    <section className="homeCategory Health"></section>
+                    <h4>Health</h4>
+                  </Link>
                 </li>
                 <li>
-                  <section className="homeCategory Learning"></section>
-                  <h4>Learning</h4>
+                  <Link to="/groups/learning">
+                    <section className="homeCategory Learning"></section>
+                    <h4>Learning</h4>
+                  </Link>
                 </li>
                 <li>
-                  <section className="homeCategory Food"></section>
-                  <h4>Food</h4>
+                  <Link to="/groups/food">
+                    <section className="homeCategory Food"></section>
+                    <h4>Food</h4>
+                  </Link>
                 </li>
                 <li>
-                  <section className="homeCategory Writing"></section>
-                  <h4>Writing</h4>
+                  <Link to="/groups/writing">
+                    <section className="homeCategory Writing"></section>
+                    <h4>Writing</h4>
+                  </Link>
                 </li>
                 <li>
-                  <section className="homeCategory Language"></section>
-                  <h4>Language</h4>
+                  <Link to="/groups/language">
+                    <section className="homeCategory Language"></section>
+                    <h4>Language</h4>
+                  </Link>
                 </li>
                 <li>
-                  <section className="homeCategory Family"></section>
-                  <h4>Family</h4>
+                  <Link to="/groups/family">
+                    <section className="homeCategory Family"></section>
+                    <h4>Family</h4>
+                  </Link>
                 </li>
               </ul>
             </section>
