@@ -1,26 +1,26 @@
 import merge from 'lodash/merge';
 
 import {
-  RECEIVE_GROUP,
+  RECEIVE_EVENT,
   RECEIVE_ERRORS
-} from '../actions/group_actions';
+} from '../actions/event_actions';
 
 const defaultState = {
-  group: null,
+  event: null,
   errors: []
 };
 
-const GroupReducer = (state = defaultState, action) => {
+const EventReducer = (state = defaultState, action) => {
   Object.freeze(state);
   switch (action.type) {
-    case RECEIVE_GROUP:
+    case RECEIVE_EVENT:
       return {
-        group: action.group,
+        event: action.event,
         errors: []
       };
     case RECEIVE_ERRORS:
     return {
-      groups: null,
+      events: null,
       errors: action.errors
     };
     default:
@@ -28,4 +28,4 @@ const GroupReducer = (state = defaultState, action) => {
   }
 };
 
-export default GroupReducer;
+export default EventReducer;
