@@ -12,6 +12,10 @@ Rails.application.routes.draw do
     resources :groups, except: [:new, :edit]
   end
 
+  namespace :api, defaults: { format: :json } do
+    resources :events, except: [:new, :edit]
+  end
+
   root to: 'static_pages#root'
 
 end

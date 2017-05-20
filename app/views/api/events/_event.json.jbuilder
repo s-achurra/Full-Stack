@@ -1,0 +1,11 @@
+json.extract! group, :id,
+  :title,
+  :description,
+  :location,
+  :category,
+  :date,
+  :start_time,
+  :end_time,
+  :image_url,
+  :host_id,
+  :group_id
