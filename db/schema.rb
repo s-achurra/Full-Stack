@@ -11,10 +11,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170519190011) do
+ActiveRecord::Schema.define(version: 20170520192302) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "events", force: :cascade do |t|
+    t.integer  "host_id"
+    t.integer  "group_id"
+    t.string   "title"
+    t.text     "description"
+    t.string   "location"
+    t.date     "date"
+    t.time     "start_time"
+    t.time     "end_time"
+    t.string   "image_link"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "events", ["group_id"], name: "index_events_on_group_id", using: :btree
+  add_index "events", ["host_id"], name: "index_events_on_host_id", using: :btree
+
+  create_table "follows", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "group_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "follows", ["group_id"], name: "index_follows_on_group_id", using: :btree
+  add_index "follows", ["user_id"], name: "index_follows_on_user_id", using: :btree
 
   create_table "groups", force: :cascade do |t|
     t.string   "title"
@@ -28,6 +55,16 @@ ActiveRecord::Schema.define(version: 20170519190011) do
   end
 
   add_index "groups", ["owner_id"], name: "index_groups_on_owner_id", using: :btree
+
+  create_table "rsvps", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "event_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "rsvps", ["event_id"], name: "index_rsvps_on_event_id", using: :btree
+  add_index "rsvps", ["user_id"], name: "index_rsvps_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "username",        null: false
