@@ -40,8 +40,10 @@ class Home extends React.Component {
             <section className="categoryIconsMain">
               <ul className="categoryIconsList">
                 <li>
-                  <section className="homeCategory Outdoors"></section>
-                  <h4>Outdoors</h4>
+                  <Link to="/groups/outdoors">
+                    <section className="homeCategory Outdoors"></section>
+                    <h4>Outdoors</h4>
+                  </Link>
                 </li>
                 <li>
                   <section className="homeCategory Tech"></section>

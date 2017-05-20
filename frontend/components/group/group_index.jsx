@@ -21,6 +21,14 @@ class GroupIndex extends React.Component {
 
   render() {
 
+    let groups;
+    if (this.props.match.params.category) {
+      groups = this.props.groups.filter(group =>
+        group.category.toLowerCase() === this.props.match.params.category)
+    } else {
+      groups = this.props.groups;
+    }
+
     if (this.props.groups === undefined) {
       return ( <div>loading...</div> )
     }
@@ -33,7 +41,7 @@ class GroupIndex extends React.Component {
           </section>
           <section className="groupIndexList">
             <ul>
-              {this.props.groups.map(group => <GroupIndexItem
+              {groups.map(group => <GroupIndexItem
                 key={group.id} group={group} />)}
             </ul>
           </section>
