@@ -1,18 +1,18 @@
-export const fetchGroups = () => (
+export const fetchEvents = () => (
   $.ajax({
     method: 'GET',
     url: 'api/events'
   })
 );
 
-export const fetchGroup = (id) => (
+export const fetchEvent = (id) => (
   $.ajax({
     method: 'GET',
     url: `api/events/${id}`
   })
 );
 
-export const createGroup = (event) => (
+export const createEvent = (event) => (
   $.ajax({
     method: 'POST',
     url: 'api/events',
@@ -20,14 +20,14 @@ export const createGroup = (event) => (
   })
 );
 
-export const deleteGroup = (id) => (
+export const deleteEvent = (id) => (
   $.ajax({
     method: 'DELETE',
     url: `api/events/${id}`
   })
 );
 
-export const updateGroup = (event) => (
+export const updateEvent = (event) => (
   $.ajax({
     method: 'PATCH',
     url: `api/events/${event.id}`,

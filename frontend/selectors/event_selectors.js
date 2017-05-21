@@ -1,3 +1,3 @@
 import { values } from 'lodash';
 
-export const selectAllEventss = (state) => values(state.events.events);
+export const selectAllEvents = (state) => values(state.events.events);
