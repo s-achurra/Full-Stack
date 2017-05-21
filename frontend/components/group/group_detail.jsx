@@ -17,6 +17,16 @@ class GroupDetail extends React.Component {
       .then(window.location.href="#/groups");
   }
 
+  handleEdit(e) {
+    e.preventDefault();
+    window.location.href=`#/group/edit/${e.target.id}`;
+  }
+
+  handleCreateEvent(e) {
+    e.preventDefault();
+    window.location.href=`#/event/create`;
+  }
+
   render() {
     if (!this.props.group) {
       return ( <div>loading...</div> )
@@ -27,6 +37,10 @@ class GroupDetail extends React.Component {
 
             <header className="groupDetailHeader">
               <h1>{this.props.group.title}</h1>
+              <section>
+                <button className="button" id={`${this.props.group.id}`} onClick={this.handleEdit}>Update Group</button>
+                <Link to="/event/new" className="button">Create Event</Link>
+              </section>
             </header>
 
             <section className="groupColumns">

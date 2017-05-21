@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-class GroupForm extends React.Component {
+class GroupEdit extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
