@@ -9,6 +9,9 @@ class EventForm extends React.Component {
       description: '',
       location: '',
       image_url: '',
+      date: '',
+      start_time: '',
+      end_time: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.update = this.update.bind(this);
@@ -66,12 +69,32 @@ class EventForm extends React.Component {
                 onChange={this.update('image_url')}
               />
 
-
             <span>Description</span>
               <textarea
               value={this.state.description}
               onChange={this.update('description')}>
               </textarea>
+
+              <span>Event Date</span>
+              <input
+              type="date"
+              value={this.state.date}
+              onChange={this.update('date')}
+              />
+
+              <span>Event Start Time</span>
+              <input
+              type="time"
+              value={this.state.start_time}
+              onChange={this.update('start_time')}
+              />
+
+              <span>Event Start Time</span>
+              <input
+              type="time"
+              value={this.state.end_time}
+              onChange={this.update('end_time')}
+              />
 
             <button className="button" onClick={this.handleSubmit}>Create Event</button>
             {errors}

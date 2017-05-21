@@ -22,6 +22,7 @@ class GroupIndex extends React.Component {
   render() {
 
     let groups;
+    let title;
     if (this.props.match.params.category) {
       groups = this.props.groups.filter(group =>
         group.category.toLowerCase() === this.props.match.params.category)
@@ -33,11 +34,15 @@ class GroupIndex extends React.Component {
       return ( <div>loading...</div> )
     }
 
+    this.props.match.params.category ?
+      title = this.props.match.params.category.toUpperCase() :
+      title = "ALL GROUPS"
+
     if (this.props.groups) {
       return (
         <section className="groupIndex">
           <section className="groupIndexHeader">
-            <h1>All Groups</h1>
+            <h1>{title}</h1>
           </section>
           <section className="groupIndexList">
             <ul>

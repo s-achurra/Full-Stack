@@ -1,0 +1,84 @@
+// Place all the styles related to the api/events controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.eventDetailPage {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eventDetailPage * {
+  margin: 20px;
+}
+
+.eventDetailHeader {
+  width: 60%;
+  background-color: #ed1c40;
+}
+
+.eventDetailHeader h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+.eventColumns {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  min-height: 800px;
+}
+
+.eventColumns>* {
+  background-color: white;
+  margin: 0;
+
+}
+
+.eventDetailLeft {
+  flex: 1;
+  margin-right: 10px;
+  border: 1px solid black;
+}
+
+.eventDetailRight {
+  flex: 3;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.eventDetailPage h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.eventDetail p {
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.eventDetails, .eventEventsList {
+  border: 1px solid black;
+  margin: 0;
+  padding: 10px;
+}
+
+.eventDetails {
+  margin-bottom: 10px;
+}
+
+.eventEventsList {
+  height: 100%;
+}
+
+.eventDetailLeft img {
+  width: 80%;
+}

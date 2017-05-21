@@ -1,0 +1,51 @@
+.eventIndex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.eventIndexHeader h1 {
+  font-size: 40px;
+}
+
+.eventIndexList {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.eventIndexList ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 950px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.eventIndexList li{
+  margin: 16px;
+}
+
+.eventImage {
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.eventIndexList a {
+  text-decoration: none;
+  color: black;
+}
+
+// Group Index Specific
+
+.eventIndex {
+  margin-top: 20px;
+}

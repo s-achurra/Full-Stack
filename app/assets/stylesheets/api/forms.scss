@@ -4,21 +4,23 @@
 
 // Form style
 
-.auth, .createGroup {
+.auth, .createGroup, .createEvent {
 	display: flex;
 	justify-content: center;
+	background-color: #f2f2f2;
 	min-height: 100vh;
 }
 
-.auth>*, .createGroup>* {
+.auth>*, .createGroup>*, .createEvent>* {
 	width: 50%;
 }
 
-.auth .form, .createGroup .form {
+.auth .form, .createGroup .form, .createEvent .form {
 	max-width: 480px;
 }
 
-.auth header, .auth form, .createGroup header, .createGroup form {
+.auth header, .auth form, .createGroup header, .createGroup form,
+	.createEvent form, .createEvent header {
 	background-color: white;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
@@ -27,7 +29,7 @@
 	top: -20%;
 }
 
-.auth header, .createGroup header {
+.auth header, .createGroup header, .createEvent header {
 	padding: 16px;
 	border: 1px solid rgba(0,0,0,.12);
 }
@@ -41,7 +43,7 @@
 	height: 300px;
 }
 
-.auth h1, .createGroup h1 {
+.auth h1, .createGroup h1, .createEvent h1 {
 	color: #E51937;
 	font-weight: 500;
 	font-size: 42px;
@@ -49,25 +51,21 @@
 	margin-bottom: 10px;
 }
 
-.auth, .createGroup {
-	background-color: #f2f2f2;
-}
-
-.auth .button, .createGroup .button {
+.auth .button, .createGroup .button, .createEvent .button {
 	max-width: 100px;
 }
 
-.auth *, .createGroup * {
+.auth *, .createGroup *, .createEvent * {
 	font-weight: 600;
 	font-size: 14px;
 }
 
-.auth a, .createGroup a {
+.auth a, .createGroup a, .createEvent a {
 	text-decoration: none;
 	color: #1f24cc;
 }
 
-.auth input, .createGroup input {
+.auth input, .createGroup input, .createEvent input {
 	display: block;
 	line-height: 1.45;
 	padding: 4px;
@@ -83,7 +81,7 @@
 
 // Group Form Style
 
-.createGroup form {
+.createGroup form, .createEvent form {
 	padding: 16px;
 	border: 1px solid rgba(0,0,0,.12);
 	display: flex;
@@ -92,15 +90,25 @@
 	height: 450px;
 }
 
-.createGroup textarea {
+.createGroup textarea, .createEvent textarea {
 	height: 100px;
 }
 
-.createGroup .button {
+.createGroup .button, .createEvent .button {
 	margin-top: 16px;
 	font-size: 16px;
 }
 
 .createGroup header, .createGroup form {
 		top: -10%;
+}
+
+// Event Form Style
+
+.createEvent form {
+	height: 650px;
+}
+
+.createEvent header, .createEvent form {
+	top: -5%;
 }
