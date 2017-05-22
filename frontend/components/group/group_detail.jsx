@@ -1,10 +1,14 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
+import GroupDetailEventItem from './group_detail_event_item';
 
 class GroupDetail extends React.Component {
   constructor(props) {
     super(props);
     this.handleDelete = this.handleDelete.bind(this);
+    this.handleEdit = this.handleEdit.bind(this);
+    this.handleCreateEvent = this.handleCreateEvent.bind(this);
+    this.handleFollow = this.handleFollow.bind(this);
   }
 
   componentWillMount() {
@@ -57,6 +61,8 @@ class GroupDetail extends React.Component {
                 <p>{this.props.group.location}</p>
                 <h3>Category: </h3>
                 <p>{this.props.group.category}</p>
+                <h3>Creator: </h3>
+                <p>{this.props.group.owner.username}</p>
               </section>
 
               <section className="groupDetailRight">
@@ -66,6 +72,9 @@ class GroupDetail extends React.Component {
                 </section>
                 <section className="groupEventsList">
                   <h3>Events List</h3>
+                  { this.props.group.events.map(
+                    event => <GroupDetailEventItem key={event.id}
+                    event={event} />) }
                 </section>
               </section>
 
