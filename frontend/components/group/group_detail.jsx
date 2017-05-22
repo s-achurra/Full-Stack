@@ -39,6 +39,7 @@ class GroupDetail extends React.Component {
               <h1>{this.props.group.title}</h1>
               <section>
                 <button className="button" id={`${this.props.group.id}`} onClick={this.handleEdit}>Update Group</button>
+                <button className="button" id={`${this.props.group.id}`} onClick={this.handleFollow}>Follow Group</button>
                 <Link to="/event/new" className="button">Create Event</Link>
               </section>
             </header>

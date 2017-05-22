@@ -16,7 +16,7 @@ import EventIndexContainer from './event/event_index_container';
 import EventDetailContainer from './event/event_detail_container';
 
 import { Link, Route, Switch } from 'react-router-dom';
-import { AuthRoute } from '../util/route_util';
+import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 const App = () => (
   <div>
@@ -32,11 +32,12 @@ const App = () => (
     <Switch>
       <Route exact path='/' component={HomeContainer} />
 
-      <Route exact path='/group/new' component={GroupCreateContainer} />
+      <ProtectedRoute path="/group/new" component={GroupCreateContainer} />
       <Route exact path='/groups' component={GroupIndexContainer} />
       <Route exact path='/groups/:category' component={GroupIndexContainer} />
       <Route exact path='/group/:id' component={GroupDetailContainer} />
       <Route exact path='/group/edit/:id' component={GroupEditContainer} />
+
 
       <Route exact path='/event/new' component={EventCreateContainer} />
       <Route exact path='/events' component={EventIndexContainer} />
