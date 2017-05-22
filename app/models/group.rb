@@ -2,7 +2,15 @@ class Group < ActiveRecord::Base
 
   validates :title, :description, :location, :category, presence: true
 
-  # belongs_to :user
+  belongs_to :owner,
+  primary_key: :id,
+  foreign_key: :owner_id,
+  class_name: :Owner
+
+  has_many :follows
+
+  has_many :users,
+  though: :follows
 
   after_initialize :set_default_image
 

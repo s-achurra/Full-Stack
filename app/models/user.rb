@@ -9,7 +9,25 @@ class User < ActiveRecord::Base
 	after_initialize :ensure_session_token, :set_default_image
 	before_validation :ensure_session_token_uniqueness
 
-	has_many :groups
+	has_many :owned_groups,
+	primary_key: :id,
+	foreign_key: :owner_id,
+	class_name: :OwnedGroups
+
+	has_many :owned_events,
+	primary_key: :id,
+	foreign_key: :host_id,
+	class_name: :OwnedEvents
+
+	has_many :follows
+
+	has_many :rsvps
+
+	has_many :groups,
+	through: :follows
+
+	has_many :events,
+	through: :rsvps
 
 	def password= password
 		self.password_digest = BCrypt::Password.create(password)
