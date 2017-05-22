@@ -30,10 +30,14 @@ class GroupDetail extends React.Component {
 
   handleFollow(e) {
     e.preventDefault();
-    postFollow({
-      user_id: this.props.current_user.id,
-      group_id: this.props.group.id
-    }).then(this.componentWillMount());
+    if (this.props.current_user) {
+      postFollow({
+        user_id: this.props.current_user.id,
+        group_id: this.props.group.id
+      }).then(this.componentWillMount());
+    } else {
+      alert("You must log in to Follow Groups");
+    }
   }
 
   handleLeave(e) {
@@ -46,11 +50,8 @@ class GroupDetail extends React.Component {
       if (follow.group_id === group && follow.user_id === user) {
         deleteFollow(follow.id)
       }
-
     })
-
     this.componentWillMount();
-
   }
 
   handleCreateEvent(e) {
@@ -76,20 +77,25 @@ class GroupDetail extends React.Component {
       return ( <div>loading...</div> )
     } else {
       return (
+
+
+
         <section className="groupDetailPage">
             <header className="groupDetailHeader">
               <h1>{this.props.group.title}</h1>
-              <section>
-                <button className="button" id={`${this.props.group.id}`} onClick={this.handleEdit}>Update Group</button>
-
-                { this.is_followed() ?
-                  <button className="button" id={`${this.props.group.id}`} onClick={this.handleLeave}>Leave Group</button> :
-                  <button className="button" id={`${this.props.group.id}`} onClick={this.handleFollow}>Follow Group</button>
-                }
-
-                <Link to="/event/new" className="button">Create Event</Link>
-              </section>
             </header>
+
+            <section className="groupDetailButtons">
+              <button className="button" id={`${this.props.group.id}`} onClick={this.handleEdit}>Update Group</button>
+
+              {
+                this.is_followed() ?
+                <button className="button" id={`${this.props.group.id}`} onClick={this.handleLeave}>Leave Group</button> :
+                <button className="button" id={`${this.props.group.id}`} onClick={this.handleFollow}>Follow Group</button>
+              }
+
+              <Link to="/event/new" className="button">Create Event</Link>
+            </section>
 
             <section className="groupColumns">
 
@@ -108,11 +114,13 @@ class GroupDetail extends React.Component {
                 <h3>Group Description:</h3>
                   <p>{this.props.group.description}</p>
                 </section>
-                <section className="groupEventsList">
+                <section className="groupEvents">
                   <h3>Events List</h3>
-                  { this.props.group.events.map(
-                    event => <GroupDetailEventItem key={event.id}
-                    event={event} />) }
+                  <ul className="groupEventsItems">
+                    { this.props.group.events.map(
+                      event => <GroupDetailEventItem key={event.id}
+                      event={event} />) }
+                  </ul>
                 </section>
               </section>
 

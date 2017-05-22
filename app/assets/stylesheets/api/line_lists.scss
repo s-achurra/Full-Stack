@@ -1,0 +1,30 @@
+.groupEventsItems * {
+  margin: 0;
+}
+
+.groupEventsItems li, .groupEventsItems a {
+  margin: 0;
+}
+
+.groupEventsItems img {
+  margin-right: 10px;
+}
+
+.groupEventsItems li a {
+  display: flex;
+}
+
+.groupEventsItems a {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.groupEventsItems a:hover {
+  background: #f2f2f2;
+}
+
+.groupEventsItems li {
+  border-bottom: 1px solid black;
+}

@@ -9,4 +9,4 @@ json.extract! event, :id,
   :host,
   :group,
   :users,
-  :follows
+  :rsvps

@@ -84,6 +84,10 @@ nav>h1 {
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: #d01031;
+}
+
 .form {
   display: flex;
   justify-content: center;

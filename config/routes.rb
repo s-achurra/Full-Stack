@@ -24,8 +24,6 @@ Rails.application.routes.draw do
     resources :follows, only: [:create, :destroy, :show]
   end
 
-
-
   root to: 'static_pages#root'
 
 end

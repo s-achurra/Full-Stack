@@ -65,7 +65,7 @@
   word-wrap: break-word;
 }
 
-.groupDetails, .groupEventsList {
+.groupDetails, .groupEvents {
   border: 1px solid black;
   margin: 0;
   padding: 10px;
@@ -75,6 +75,13 @@
   margin-bottom: 10px;
 }
 
-.groupEventsList {
+.groupEvents {
   height: 100%;
+}
+
+.groupDetailButtons {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fafafa;
+  margin-top: 0px;
 }
