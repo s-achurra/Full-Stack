@@ -8,6 +8,8 @@ class Event < ActiveRecord::Base
   foreign_key: :host_id,
   class_name: :User
 
+  belongs_to :group
+
   has_many :rsvps
 
   has_many :users,

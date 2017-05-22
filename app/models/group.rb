@@ -12,6 +12,8 @@ class Group < ActiveRecord::Base
   has_many :users,
   through: :follows
 
+  has_many :events
+
   after_initialize :set_default_image
 
   def set_default_image

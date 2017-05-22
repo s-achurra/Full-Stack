@@ -6,5 +6,6 @@ json.extract! event, :id,
   :start_time,
   :end_time,
   :image_url,
-  :host_id,
-  :group_id
+  :host,
+  :group,
+  :users

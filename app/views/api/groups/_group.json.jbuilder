@@ -4,4 +4,7 @@ json.extract! group, :id,
   :location,
   :category,
   :owner_id,
-  :image_url
+  :image_url,
+  :owner,
+  :users,
+  :events
