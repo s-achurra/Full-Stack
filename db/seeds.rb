@@ -101,3 +101,105 @@ Group.create!(
   image_url: "https://upload.wikimedia.org/wikipedia/commons/b/b4/Ghana_school_students_and_teachers.jpg",
   owner_id: 1
 )
+
+# Event Create
+
+Event.create!(
+  host_id: 1,
+  group_id: 1,
+  title: "Get together",
+  description: "We're just going to gather.",
+  location: "SF",
+  date: "2017-06-06",
+  start_time: "12:00:00"
+)
+
+Event.create!(
+  host_id: 1,
+  group_id: 2,
+  title: "Get together",
+  description: "We're just going to gather.",
+  location: "SF",
+  date: "2017-06-06",
+  start_time: "12:00:00"
+)
+
+Event.create!(
+  host_id: 1,
+  group_id: 3,
+  title: "Get together",
+  description: "We're just going to gather.",
+  location: "SF",
+  date: "2017-06-06",
+  start_time: "12:00:00"
+)
+
+Event.create!(
+  host_id: 1,
+  group_id: 4,
+  title: "Get together",
+  description: "We're just going to gather.",
+  location: "SF",
+  date: "2017-06-06",
+  start_time: "12:00:00"
+)
+
+Event.create!(
+  host_id: 1,
+  group_id: 5,
+  title: "Get together",
+  description: "We're just going to gather.",
+  location: "SF",
+  date: "2017-06-06",
+  start_time: "12:00:00"
+)
+
+Event.create!(
+  host_id: 1,
+  group_id: 6,
+  title: "Get together",
+  description: "We're just going to gather.",
+  location: "SF",
+  date: "2017-06-06",
+  start_time: "12:00:00"
+)
+
+Event.create!(
+  host_id: 1,
+  group_id: 7,
+  title: "Get together",
+  description: "We're just going to gather.",
+  location: "SF",
+  date: "2017-06-06",
+  start_time: "12:00:00"
+)
+
+Event.create!(
+  host_id: 1,
+  group_id: 8,
+  title: "Get together",
+  description: "We're just going to gather.",
+  location: "SF",
+  date: "2017-06-06",
+  start_time: "12:00:00"
+)
+
+Event.create!(
+  host_id: 1,
+  group_id: 9,
+  title: "Get together",
+  description: "We're just going to gather.",
+  location: "SF",
+  date: "2017-06-06",
+  start_time: "12:00:00"
+)
+
+Event.create!(
+  host_id: 1,
+  group_id: 10,
+  title: "Get together",
+  description: "We're just going to gather.",
+  location: "SF",
+  date: "2017-06-06",
+  start_time: "12:00:00"
+)
