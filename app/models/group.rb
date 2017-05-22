@@ -5,12 +5,12 @@ class Group < ActiveRecord::Base
   belongs_to :owner,
   primary_key: :id,
   foreign_key: :owner_id,
-  class_name: :Owner
+  class_name: :User
 
   has_many :follows
 
   has_many :users,
-  though: :follows
+  through: :follows
 
   after_initialize :set_default_image
 

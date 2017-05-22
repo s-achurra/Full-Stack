@@ -6,7 +6,7 @@ class Event < ActiveRecord::Base
   belongs_to :host,
   primary_key: :id,
   foreign_key: :host_id,
-  class_name: :Host
+  class_name: :User
 
   has_many :rsvps
 

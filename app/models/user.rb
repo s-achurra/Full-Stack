@@ -12,12 +12,12 @@ class User < ActiveRecord::Base
 	has_many :owned_groups,
 	primary_key: :id,
 	foreign_key: :owner_id,
-	class_name: :OwnedGroups
+	class_name: :Group
 
 	has_many :owned_events,
 	primary_key: :id,
 	foreign_key: :host_id,
-	class_name: :OwnedEvents
+	class_name: :Event
 
 	has_many :follows
 
