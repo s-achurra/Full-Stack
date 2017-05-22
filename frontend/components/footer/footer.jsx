@@ -5,8 +5,16 @@ const Footer = () => (
     <section className="footerContents">
       <div className="links">
         <ul>
-          <li><i className="fa fa-github" aria-hidden="true"> GitHub</i></li>
-          <li><i className="fa fa-linkedin" aria-hidden="true"> Linked</i></li>
+          <li>
+            <a href="https://github.com/s-achurra/Full-Stack">
+              <i className="fa fa-github" aria-hidden="true"> GitHub</i>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/stephen-achurra/">
+              <i className="fa fa-linkedin" aria-hidden="true"> Linked</i>
+            </a>
+          </li>
         </ul>
       </div>
       <div className="authorFooter">
