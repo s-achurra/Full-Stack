@@ -15,7 +15,6 @@ class EventForm extends React.Component {
       group_id: this.props.state.group.group.id,
       host_id: this.props.state.session.currentUser.id
     };
-    debugger
     this.handleSubmit = this.handleSubmit.bind(this);
     this.update = this.update.bind(this);
   }

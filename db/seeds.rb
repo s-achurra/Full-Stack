@@ -72,7 +72,7 @@ Group.create!(
 
 Group.create!(
   title: "Parents for Parks",
-  description: "Brind the whole family to the park while meeting other parents.",
+  description: "Bring the whole family to the park while meeting other parents.",
   category: "Family",
   location: "SF",
   image_url: "https://upload.wikimedia.org/wikipedia/commons/6/60/Green_Park%2C_London_-_April_2007.jpg"
