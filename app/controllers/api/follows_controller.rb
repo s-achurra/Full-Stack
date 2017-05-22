@@ -2,9 +2,8 @@ class Api::FollowsController < ApplicationController
 
   def create
     @follow = Follow.new(follow_params)
-    if @follow
-      login(@follow)
-      render "api/group/#{@follow.group_id}"
+    if @follow.save
+      render :show
     else
     render(
       json: ["Cannot Register for Group"],
@@ -15,9 +14,8 @@ class Api::FollowsController < ApplicationController
 
   def destroy
     @follow = Follow.find_by(id: params[:id])
-    if @follow
-      @follow.destroy
-      render "api/group/#{@follow.group_id}"
+    if @follow.destroy
+      render :show
     else
       render(
         json: ["Cannot Remove Group"],

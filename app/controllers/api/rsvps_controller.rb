@@ -1,9 +1,8 @@
 class Api::RsvpsController < ApplicationController
   def create
     @rsvp = Rsvp.new(rsvp_params)
-    if @rsvp
-      login(@rsvp)
-      render "api/event/#{@rsvp.event_id}"
+    if @rsvp.save
+      render :show
     else
     render(
       json: ["Cannot Register for Event"],
@@ -14,9 +13,8 @@ class Api::RsvpsController < ApplicationController
 
   def destroy
     @rsvp = Rsvp.find_by(id: params[:id])
-    if @rsvp
-      @rsvp.destroy
-      render "api/event/#{@rsvp.event_id}"
+    if @rsvp.destroy
+      render :show
     else
       render(
         json: ["Cannot Remove Event"],
