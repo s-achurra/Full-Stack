@@ -20,7 +20,7 @@ const Footer = () => (
       <div className="authorFooter">
       </div>
 
-        <p>Made by Stephen</p>
+        <p>Made by Stephen Achurra</p>
     </section>
   </div>
 
