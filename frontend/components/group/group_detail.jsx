@@ -22,6 +22,11 @@ class GroupDetail extends React.Component {
     window.location.href=`#/group/edit/${e.target.id}`;
   }
 
+  handleFollow(e) {
+    e.preventDefault();
+    window.location.href=`#/group/edit/${e.target.id}`;
+  }
+
   handleCreateEvent(e) {
     e.preventDefault();
     window.location.href=`#/event/create`;
