@@ -11,8 +11,11 @@ class EventForm extends React.Component {
       image_url: '',
       date: '',
       start_time: '',
-      end_time: ''
+      end_time: '',
+      group_id: this.props.state.group.group.id,
+      host_id: this.props.state.session.currentUser.id
     };
+    debugger
     this.handleSubmit = this.handleSubmit.bind(this);
     this.update = this.update.bind(this);
   }
