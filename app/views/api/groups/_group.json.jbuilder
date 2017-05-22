@@ -7,4 +7,5 @@ json.extract! group, :id,
   :image_url,
   :owner,
   :users,
-  :events
+  :events,
+  :follows

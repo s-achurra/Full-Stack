@@ -5,7 +5,8 @@ import GroupDetail from './group_detail';
 import { fetchGroup, deleteGroup } from '../../actions/group_actions';
 
 const mapStateToProps = (state) => ({
-  group: state.group.group
+  group: state.group.group,
+  current_user: state.session.currentUser
 });
 
 const mapDispatchToProps = dispatch => ({

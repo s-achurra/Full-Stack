@@ -8,4 +8,5 @@ json.extract! event, :id,
   :image_url,
   :host,
   :group,
-  :users
+  :users,
+  :follows

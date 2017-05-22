@@ -21,7 +21,7 @@ Rails.application.routes.draw do
   end
 
   namespace :api, defaults: { format: :json } do
-    resources :follows, only: [:create, :destroy]
+    resources :follows, only: [:create, :destroy, :show]
   end
 
 

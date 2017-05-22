@@ -6,4 +6,6 @@ json.extract! user, :id,
   :owned_groups,
   :owned_events,
   :groups,
-  :events
+  :events,
+  :follows,
+  :rsvps
