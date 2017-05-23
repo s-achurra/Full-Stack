@@ -21,13 +21,15 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 950px;
+  max-width: 850px;
   justify-content: space-around;
   align-items: center;
 }
 
 .categoryIconsList li, .groupIndexList li{
-  margin: 16px;
+  margin-bottom: 16px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .homeCategory, .groupImage {
