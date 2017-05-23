@@ -19,13 +19,26 @@ class GroupDetail extends React.Component {
 
   handleDelete(e) {
     e.preventDefault();
-    this.props.deleteGroup(e.target.id)
-      .then(window.location.href="#/groups");
+    if (this.props.current_user &&
+      this.prpos.current_user.id === this.props.group.owner.id) {
+      let check = confirm("Are you sure you would like to delete this group?");
+      if (check) {
+        this.props.deleteGroup(e.target.id)
+        .then(window.location.href="#/groups");
+      }
+    } else {
+      alert("You must own an group to delete. Log in to delete.")
+    }
   }
 
   handleEdit(e) {
     e.preventDefault();
-    window.location.href=`#/group/edit/${e.target.id}`;
+    if (this.props.current_user &&
+      this.prpos.current_user.id === this.props.group.owner.id) {
+      window.location.href=`#/group/edit/${e.target.id}`;
+    } else {
+      alert("You must own a group to update. Log in to update.");
+    }
   }
 
   handleFollow(e) {
@@ -56,7 +69,11 @@ class GroupDetail extends React.Component {
 
   handleCreateEvent(e) {
     e.preventDefault();
-    window.location.href=`#/event/create`;
+    if (this.props.current_user) {
+      window.location.href=`#/event/new`;
+    } else {
+      alert("You must log in to create an Event");
+    }
   }
 
   is_followed(){
@@ -78,8 +95,6 @@ class GroupDetail extends React.Component {
     } else {
       return (
 
-
-
         <section className="groupDetailPage">
             <header className="groupDetailHeader">
               <h1>{this.props.group.title}</h1>
@@ -94,7 +109,7 @@ class GroupDetail extends React.Component {
                 <button className="button" id={`${this.props.group.id}`} onClick={this.handleFollow}>Follow Group</button>
               }
 
-              <Link to="/event/new" className="button">Create Event</Link>
+              <button className="button" onClick={this.handleCreateEvent}>Create Event</button>
             </section>
 
             <section className="groupColumns">
@@ -104,7 +119,7 @@ class GroupDetail extends React.Component {
                 <h3>Location: </h3>
                 <p>{this.props.group.location}</p>
                 <h3>Category: </h3>
-                <p>{this.props.group.category}</p>
+                <p>{this.props.group.category}</p>to="/event/new"
                 <h3>Creator: </h3>
                 <p>{this.props.group.owner.username}</p>
               </section>
