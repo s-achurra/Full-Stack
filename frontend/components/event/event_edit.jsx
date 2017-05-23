@@ -64,7 +64,7 @@ class EventEdit extends React.Component {
       <section className="createEvent">
         <section className="form">
           <header>
-            <h1>Create a Event</h1>
+            <h1>Update Event</h1>
           </header>
           <form>
 
@@ -117,7 +117,7 @@ class EventEdit extends React.Component {
               onChange={this.update('end_time')}
               />
 
-            <button className="button" onClick={this.handleSubmit}>Create Event</button>
+            <button className="button" onClick={this.handleSubmit}>Update Event</button>
             {errors}
           </form>
         </section>
