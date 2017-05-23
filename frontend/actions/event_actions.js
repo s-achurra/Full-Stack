@@ -7,7 +7,7 @@ export const UPDATE_EVENT = 'UPDATE_EVENT';
 export const RECEIVE_ALL_EVENTS = 'RECEIVE_ALL_EVENTS';
 export const RECEIVE_EVENT = 'RECEIVE_EVENT';
 export const RECEIVE_NEW_EVENT = 'RECEIVE_NEW_EVENT';
-export const RECEIVE_ERRORS = "RECEIVE_ERRORS";
+export const RECEIVE_EVENT_ERRORS = "RECEIVE_EVENT_ERRORS";
 
 import * as APIUtil from '../util/event_api_util';
 
@@ -53,6 +53,6 @@ export const receiveNewEvent = (event) => ({
 });
 
 export const receiveErrors = errors => ({
-  type: RECEIVE_ERRORS,
+  type: RECEIVE_EVENT_ERRORS,
   errors
 });

@@ -3,7 +3,7 @@ import merge from 'lodash/merge';
 import {
   RECEIVE_ALL_GROUPS,
   RECEIVE_NEW_GROUP,
-  RECEIVE_ERRORS
+  RECEIVE_GROUP_ERRORS
 } from '../actions/group_actions';
 
 const defaultState = {
@@ -22,7 +22,7 @@ const GroupsReducer = (state = defaultState, action) => {
     case RECEIVE_NEW_GROUP:
       const newGroup = {[action.group.id]: action.group};
       return merge({}, state, newGroup);
-    case RECEIVE_ERRORS:
+    case RECEIVE_GROUP_ERRORS:
     return {
       groups: null,
       errors: action.errors
