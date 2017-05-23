@@ -87,7 +87,7 @@ class EventForm extends React.Component {
               <span>Event Start Time</span>
               <input
               type="time"
-              value='23:12'
+              value={this.state.start_time}
               onChange={this.update('start_time')}
               />
 

@@ -119,7 +119,7 @@ class GroupDetail extends React.Component {
                 <h3>Location: </h3>
                 <p>{this.props.group.location}</p>
                 <h3>Category: </h3>
-                <p>{this.props.group.category}</p>to="/event/new"
+                <p>{this.props.group.category}</p>
                 <h3>Creator: </h3>
                 <p>{this.props.group.owner.username}</p>
               </section>
