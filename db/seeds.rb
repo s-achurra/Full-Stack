@@ -34,6 +34,7 @@ Group.create!(
   image_url: "https://static.pexels.com/photos/177598/pexels-photo-177598.jpeg",
   owner_id: 1
 )
+
 Group.create!(
   title: "Runners Together",
   description: "If you like running this is the group for you. We have regular group runs, discuss equipment and technique, and work to keep everyone pushing forward.",
@@ -42,6 +43,7 @@ Group.create!(
   image_url: "https://c1.staticflickr.com/4/3790/19300545790_82ac2a3444_b.jpg",
   owner_id: 1
 )
+
 Group.create!(
   title: "Learn Spanish!",
   description: "All skill levels welcome to prectice and perfect your Spanish skills.",
@@ -50,6 +52,7 @@ Group.create!(
   image_url: "http://www.publicdomainpictures.net/pictures/180000/velka/spanish-flag-1464084072Hvb.jpg",
   owner_id: 1
 )
+
 Group.create!(
   title: "HikeUp!",
   description: "Moutian climbing is our passion and climbing as a group is our pleasure. Advanced climbers only. You'll need to provide your own gear.",
@@ -85,6 +88,7 @@ Group.create!(
   image_url: "https://upload.wikimedia.org/wikipedia/commons/6/60/Green_Park%2C_London_-_April_2007.jpg",
   owner_id: 1
 )
+
 Group.create!(
   title: "Poetry Pack",
   description: "Snap Snap Snap. Bring your cool prose to our group events. Listen to poetry from others and discuss what makes good poetry.",
@@ -103,6 +107,106 @@ Group.create!(
 )
 
 # Event Create
+
+Event.create!(
+  host_id: 1,
+  group_id: 1,
+  title: "Get together",
+  description: "We're just going to gather.",
+  location: "SF",
+  date: "2017-06-06",
+  start_time: "12:00:00"
+)
+
+Event.create!(
+  host_id: 1,
+  group_id: 2,
+  title: "Get together",
+  description: "We're just going to gather.",
+  location: "SF",
+  date: "2017-06-06",
+  start_time: "12:00:00"
+)
+
+Event.create!(
+  host_id: 1,
+  group_id: 3,
+  title: "Get together",
+  description: "We're just going to gather.",
+  location: "SF",
+  date: "2017-06-06",
+  start_time: "12:00:00"
+)
+
+Event.create!(
+  host_id: 1,
+  group_id: 4,
+  title: "Get together",
+  description: "We're just going to gather.",
+  location: "SF",
+  date: "2017-06-06",
+  start_time: "12:00:00"
+)
+
+Event.create!(
+  host_id: 1,
+  group_id: 5,
+  title: "Get together",
+  description: "We're just going to gather.",
+  location: "SF",
+  date: "2017-06-06",
+  start_time: "12:00:00"
+)
+
+Event.create!(
+  host_id: 1,
+  group_id: 6,
+  title: "Get together",
+  description: "We're just going to gather.",
+  location: "SF",
+  date: "2017-06-06",
+  start_time: "12:00:00"
+)
+
+Event.create!(
+  host_id: 1,
+  group_id: 7,
+  title: "Get together",
+  description: "We're just going to gather.",
+  location: "SF",
+  date: "2017-06-06",
+  start_time: "12:00:00"
+)
+
+Event.create!(
+  host_id: 1,
+  group_id: 8,
+  title: "Get together",
+  description: "We're just going to gather.",
+  location: "SF",
+  date: "2017-06-06",
+  start_time: "12:00:00"
+)
+
+Event.create!(
+  host_id: 1,
+  group_id: 9,
+  title: "Get together",
+  description: "We're just going to gather.",
+  location: "SF",
+  date: "2017-06-06",
+  start_time: "12:00:00"
+)
+
+Event.create!(
+  host_id: 1,
+  group_id: 10,
+  title: "Get together",
+  description: "We're just going to gather.",
+  location: "SF",
+  date: "2017-06-06",
+  start_time: "12:00:00"
+)
 
 Event.create!(
   host_id: 1,

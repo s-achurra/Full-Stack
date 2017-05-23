@@ -14,6 +14,7 @@ import GroupEditContainer from './group/group_edit_container';
 import EventCreateContainer from './event/event_create_container';
 import EventIndexContainer from './event/event_index_container';
 import EventDetailContainer from './event/event_detail_container';
+import EventEditContainer from './event/event_edit_container';
 
 import { Link, Route, Switch } from 'react-router-dom';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
@@ -42,6 +43,7 @@ const App = () => (
       <Route exact path='/event/new' component={EventCreateContainer} />
       <Route exact path='/events' component={EventIndexContainer} />
       <Route exact path='/event/:id' component={EventDetailContainer} />
+      <Route exact path='/event/edit/:id' component={EventEditContainer} />
 
       <AuthRoute path='/login' component={SessionFormContainer} />
       <AuthRoute path='/signup' component={SessionFormContainer} />

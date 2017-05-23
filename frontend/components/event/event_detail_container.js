@@ -5,7 +5,8 @@ import EventDetail from './event_detail';
 import { fetchEvent, deleteEvent } from '../../actions/event_actions';
 
 const mapStateToProps = (state) => ({
-  event: state.event.event
+  event: state.event.event,
+  current_user: state.session.currentUser
 });
 
 const mapDispatchToProps = dispatch => ({
