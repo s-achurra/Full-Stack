@@ -18,14 +18,27 @@ class EventDetail extends React.Component {
 
   handleDelete(e) {
     e.preventDefault();
-    let groupId = this.props.event.group.id
-    this.props.deleteEvent(e.target.id)
-      .then(window.location.href=`#/group/${groupId}`);
+    if (this.props.current_user &&
+      this.props.current_user.id === this.props.event.host.id) {
+      let check = confirm("Are you sure you would like to delete this event?");
+      if (check) {
+          let groupId = this.props.event.group.id
+          this.props.deleteEvent(e.target.id)
+          .then(window.location.href=`#/group/${groupId}`);
+      }
+    } else {
+      alert("You must own an event to delete. Log in to delete.")
+    }
   }
 
   handleEdit(e) {
     e.preventDefault();
-    window.location.href=`#/event/edit/${e.target.id}`;
+    if (this.props.current_user &&
+      this.props.current_user.id === this.props.event.host.id) {
+      window.location.href=`#/event/edit/${e.target.id}`;
+    } else {
+      alert("You must own an event to update. Log in to update.")
+    }
   }
 
   handleRsvp(e) {
