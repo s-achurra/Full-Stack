@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
+import EventDetailUserItem from './event_detail_user_item';
 import { postRsvp, deleteRsvp } from '../../util/rsvp_api_util';
 
 class EventDetail extends React.Component {
@@ -29,7 +30,6 @@ class EventDetail extends React.Component {
 
   handleRsvp(e) {
     e.preventDefault();
-    debugger
     if (this.props.current_user) {
       postRsvp({
         user_id: this.props.current_user.id,
@@ -113,7 +113,9 @@ class EventDetail extends React.Component {
                 <section className="groupEvents">
                   <h3>RSVP List</h3>
                   <ul className="groupEventsRsvps">
-                    <li>Place holder</li>
+                    { this.props.event.users.map(
+                    user => <EventDetailUserItem key={user.id}
+                    user={user} />) }
                   </ul>
                 </section>
               </section>
