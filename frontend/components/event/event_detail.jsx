@@ -112,7 +112,7 @@ class EventDetail extends React.Component {
                 </section>
                 <section className="groupEvents">
                   <h3>RSVP List</h3>
-                  <ul className="groupEventsRsvps">
+                  <ul className="groupEventRsvps">
                     { this.props.event.users.map(
                     user => <EventDetailUserItem key={user.id}
                     user={user} />) }

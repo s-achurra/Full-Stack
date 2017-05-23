@@ -3,10 +3,12 @@ import { Link, Route } from 'react-router-dom';
 
 const EventDetailUserItem = ({ user }) => (
   <li>
+    <Link to="/" className="inactiveLink">
     <img className="userImage" src={user.image_url}/>
     <section className="userListInfo">
-      <p>{user.username}</p>
+      <span>{user.username}</span>
     </section>
+    </Link>
   </li>
 );
 
