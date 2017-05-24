@@ -5,9 +5,9 @@ class ApplicationController < ActionController::Base
   helper_method :current_user, :logged_in?
 
   def search
-    @groups = Group.where("category LIKE '%#{params[:query]}%'
-      OR title LIKE '%#{params[:query]}'
-      OR description LIKE '%#{params[:query]}'")
+    @groups = Group.where("lower(title) LIKE '%#{params[:query].downcase}%'
+    OR lower(description) LIKE '%#{params[:query].downcase}%'
+    OR lower(title) LIKE '%#{params[:query].downcase}%'")
     render '../views/api/search/index.json.jbuilder'
   end
 
