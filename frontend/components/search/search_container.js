@@ -7,7 +7,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchAllSearches: () => (dispatch(fetchAllSearches()))
+  fetchAllSearches: (query) => (dispatch(fetchAllSearches(query)))
 });
 
 export default connect(

@@ -4,8 +4,8 @@ import * as APIUtil from '../util/search_api_util';
 
 // API FUNCTIONS
 
-export const fetchAllSearches = () => dispatch => (
-  APIUtil.fetchAllSearches().then(searches =>
+export const fetchAllSearches = (query) => dispatch => (
+  APIUtil.fetchAllSearches(query).then(searches =>
     dispatch(receiveAllSearches(searches)))
 );
 

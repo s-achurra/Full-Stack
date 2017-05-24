@@ -36,7 +36,8 @@ class Home extends React.Component {
         </section>
 
         <section className="categoriesMain">
-          <h1>Categories</h1>
+          <h1>Browse Group Categories</h1>
+          <br />
             <section className="categoryIconsMain">
               <ul className="categoryIconsList">
                 <li>

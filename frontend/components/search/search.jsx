@@ -4,14 +4,19 @@ import { Link, Route } from 'react-router-dom';
 class Search extends React.Component {
   constructor(props) {
     super(props);
+    this.results = [];
+    this.updateSearch = this.updateSearch.bind(this);
   }
 
-  componentWillMount() {
-    this.props.fetchAllSearches();
+  componentWillReceiveProps(newProps) {
+    console.log(this.props);
+    this.results = newProps.state.search.searches;
+    console.log(this.results);
   }
 
   updateSearch(e) {
     e.preventDefault();
+    this.props.fetchAllSearches(e.target.value);
   }
 
   render() {

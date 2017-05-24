@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
-import * as GroupActions from './actions/group_actions';
+import * as SearchActions from './actions/search_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
     const root = document.getElementById('root');
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     window.store = store;
-    window.fetchAllGroups = GroupActions.fetchAllGroups;
+    window.fetchAllSearches = SearchActions.fetchAllSearches;
 
     ReactDOM.render(<Root store={ store }/>, root);
 });
