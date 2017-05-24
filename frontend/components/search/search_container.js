@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import Search from './search';
-import { fetchAllSearches } from '../../actions/search_actions';
+import { fetchAllSearches,
+  removeAllSearches } from '../../actions/search_actions';
 
 const mapStateToProps = (state) => ({
   state

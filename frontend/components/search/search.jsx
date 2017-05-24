@@ -1,4 +1,5 @@
 import React from 'react';
+import SearchResultItem from './search_result_item';
 import { Link, Route } from 'react-router-dom';
 
 class Search extends React.Component {
@@ -9,23 +10,30 @@ class Search extends React.Component {
   }
 
   componentWillReceiveProps(newProps) {
-    console.log(this.props);
     this.results = newProps.state.search.searches;
-    console.log(this.results);
   }
 
   updateSearch(e) {
     e.preventDefault();
-    this.props.fetchAllSearches(e.target.value);
+    if (e.target.value) {
+      this.props.fetchAllSearches(e.target.value);
+    } else {
+      this.props.fetchAllSearches(undefined);
+    }
   }
 
   render() {
     return(
-      <form className="searchBar">
-      <input type="text" onChange={this.updateSearch} placeholder="Search"/>
-      <br/>
-      <input type="submit" value="Search" className="button"/>
-      </form>
+      <section className="search">
+        <form className="searchBar">
+          <input type="text" onChange={this.updateSearch} placeholder="Search"/>
+          <input type="submit" value="Search" className="button"/>
+        </form>
+        <ul className="searchResults">
+          {this.results.map(group => <SearchResultItem
+            key={group.id} group={group} />)}
+        </ul>
+      </section>
     );
   }
 
