@@ -16,6 +16,8 @@ import EventIndexContainer from './event/event_index_container';
 import EventDetailContainer from './event/event_detail_container';
 import EventEditContainer from './event/event_edit_container';
 
+import SearchContainer from  './search/search_container';
+
 import { Link, Route, Switch } from 'react-router-dom';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
@@ -44,6 +46,8 @@ const App = () => (
       <Route exact path='/events' component={EventIndexContainer} />
       <Route exact path='/event/:id' component={EventDetailContainer} />
       <Route exact path='/event/edit/:id' component={EventEditContainer} />
+
+      <Route exact path='/search' component={SearchContainer} />
 
       <AuthRoute path='/login' component={SessionFormContainer} />
       <AuthRoute path='/signup' component={SessionFormContainer} />

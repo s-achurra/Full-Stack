@@ -1,4 +1,4 @@
-export const fetchGroups = (query) => (
+export const fetchAllSearches = (query) => (
   $.ajax({
     method: 'GET',
     url: `api/search/${query}`,
