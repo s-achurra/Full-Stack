@@ -1,0 +1,20 @@
+.searchBar input {
+  margin-left: 5px;
+}
+
+.searchResults {
+  position: absolute;
+  z-index: 10;
+  background-color: white;
+  max-height: 500px;
+  overflow: scroll;
+  margin-left: 5px;
+}
+
+.searchResults ul {
+}
+
+.searchResults li {
+
+  border: 1px solid black;
+}
