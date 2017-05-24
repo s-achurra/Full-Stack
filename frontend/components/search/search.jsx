@@ -6,7 +6,9 @@ class Search extends React.Component {
   constructor(props) {
     super(props);
     this.results = [];
+    this.query = ''
     this.updateSearch = this.updateSearch.bind(this);
+    this.removeSearch = this.removeSearch.bind(this);
   }
 
   componentWillReceiveProps(newProps) {
@@ -17,9 +19,17 @@ class Search extends React.Component {
     e.preventDefault();
     if (e.target.value) {
       this.props.fetchAllSearches(e.target.value);
+      this.query = e.target.value;
     } else {
       this.props.fetchAllSearches(undefined);
+      this.query = '';
     }
+  }
+
+  removeSearch(){
+    this.results = [];
+    this.query = '';
+    this.props.fetchAllSearches(undefined);
   }
 
   render() {
@@ -29,11 +39,12 @@ class Search extends React.Component {
     return(
       <section className="search">
         <form className="searchBar">
-          <input type="text" onChange={this.updateSearch} placeholder="Search All Groups"/>
+          <input type="text" onChange={this.updateSearch} value={this.query}
+           placeholder="Search All Groups"/>
         </form>
-        <ul className="searchResults">
+        <ul className="searchResults" >
           {this.results.map(group => <SearchResultItem
-            key={group.id} group={group} />)}
+            key={group.id} group={group} removeSearch={this.removeSearch} />)}
         </ul>
       </section>
     );

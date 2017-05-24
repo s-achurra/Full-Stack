@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link, Route } from 'react-router-dom';
 
-const SeatchResultItem = ({ group }) => (
+const SeatchResultItem = ({ group, removeSearch }) => (
   <li>
-    <Link to={`/group/${group.id}`}>
+    <Link to={`/group/${group.id}`} onClick={removeSearch}>
     <img className="groupImage" src={group.image_url}/>
     <p>{group.title}</p>
     </Link>

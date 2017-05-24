@@ -17,6 +17,12 @@ class GroupDetail extends React.Component {
     this.props.fetchGroup(parseInt(this.props.match.params.id));
   }
 
+  componentWillReceiveProps(newProps) {
+    if (newProps.match.params.id !== this.props.match.params.id) {
+      this.props.fetchGroup(parseInt(newProps.match.params.id));
+    }
+  }
+
   handleDelete(e) {
     e.preventDefault();
     if (this.props.current_user &&
