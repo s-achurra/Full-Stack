@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
   def search
     @groups = Group.where("lower(title) LIKE '%#{params[:query].downcase}%'
     OR lower(description) LIKE '%#{params[:query].downcase}%'
+    OR lower(location) LIKE '%#{params[:query].downcase}%'
     OR lower(title) LIKE '%#{params[:query].downcase}%'")
     render '../views/api/search/index.json.jbuilder'
   end

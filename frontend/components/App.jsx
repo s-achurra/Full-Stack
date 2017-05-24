@@ -25,8 +25,11 @@ const App = () => (
   <div>
     <nav>
       <section className="navLeft">
-        <Link to="/group/new" className="navText">Make Groups</Link>
-        <Link className="exploreGroupsLink" to="/groups">Explore Groups</Link>
+        <section className="navLeftLinks">
+          <Link to="/group/new" className="navText">Make New Groups</Link>
+          <Link className="exploreGroupsLink" to="/groups">Explore All Groups</Link>
+        </section>
+        <SearchContainer />
       </section>
       <LogoContainer />
       <GreetingContainer />
@@ -47,7 +50,6 @@ const App = () => (
       <Route exact path='/event/:id' component={EventDetailContainer} />
       <Route exact path='/event/edit/:id' component={EventEditContainer} />
 
-      <Route exact path='/search' component={SearchContainer} />
 
       <AuthRoute path='/login' component={SessionFormContainer} />
       <AuthRoute path='/signup' component={SessionFormContainer} />

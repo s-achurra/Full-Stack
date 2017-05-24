@@ -55,9 +55,23 @@ nav>h1 {
   color: black;
 }
 
-.navButtons, .navLeft, .navText, #logoScript, hgroup {
+.navButtons, .navText, #logoScript, hgroup {
   display: flex;
   align-items: center;
+}
+
+.navLeftLinks {
+  display: flex;
+}
+
+.searchBar input {
+  margin-left: 5px;
+}
+
+.searchResults {
+  position: absolute;
+  z-index: 10;
+  background-color: white;
 }
 
 .button {

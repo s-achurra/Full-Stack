@@ -23,11 +23,13 @@ class Search extends React.Component {
   }
 
   render() {
+    if (!this.results) {
+      this.results = [];
+    }
     return(
       <section className="search">
         <form className="searchBar">
-          <input type="text" onChange={this.updateSearch} placeholder="Search"/>
-          <input type="submit" value="Search" className="button"/>
+          <input type="text" onChange={this.updateSearch} placeholder="Search All Groups"/>
         </form>
         <ul className="searchResults">
           {this.results.map(group => <SearchResultItem
