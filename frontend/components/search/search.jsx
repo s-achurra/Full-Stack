@@ -15,6 +15,14 @@ class Search extends React.Component {
     this.results = newProps.state.search.searches;
   }
 
+  componentWillMount(){
+    document.addEventListener("keydown", this._handleEscDown.bind(this));
+  }
+
+  componentWillUnmount(){
+    document.addEventListener("keydown", this._handleEscDown.bind(this));
+  }
+
   updateSearch(e) {
     e.preventDefault();
     if (e.target.value) {
@@ -23,6 +31,12 @@ class Search extends React.Component {
     } else {
       this.props.fetchAllSearches(undefined);
       this.query = '';
+    }
+  }
+
+  _handleEscDown(e) {
+    if ( event.keyCode == 27 ) {
+      this.removeSearch();
     }
   }
 
@@ -38,6 +52,7 @@ class Search extends React.Component {
     }
     return(
       <section className="search">
+
         <form className="searchBar">
           <input type="text" onChange={this.updateSearch} value={this.query}
            placeholder="Search All Groups"/>
