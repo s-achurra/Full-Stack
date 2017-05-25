@@ -6,7 +6,9 @@ const EventDetailUserItem = ({ user }) => (
     <Link to="/" className="inactiveLink">
     <img className="userImage" src={user.image_url}/>
     <section className="userListInfo">
-      <span>{user.username}</span>
+      <span>Username: {user.username}</span>
+      <br />
+      <span>First Name: {user.first_name}</span>
     </section>
     </Link>
   </li>

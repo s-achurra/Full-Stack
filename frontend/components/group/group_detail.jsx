@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import GroupDetailEventItem from './group_detail_event_item';
+import GroupUserFollowImage from './group_user_follow_image';
 import { postFollow, deleteFollow } from '../../util/follow_api_util';
 
 class GroupDetail extends React.Component {
@@ -127,8 +128,9 @@ class GroupDetail extends React.Component {
                 <h3>Category: </h3>
                 <p>{this.props.group.category}</p>
                 <h3>Owner: </h3>
-                <img className="ownerId" src={this.props.group.owner.image_url}/>
-                <p>{this.props.group.owner.username}</p>
+                <img className="ownerImage" src={this.props.group.owner.image_url}/>
+                <p>Username: {this.props.group.owner.username}</p>
+                <p>First Name: {this.props.group.owner.first_name}</p>
 
               </section>
 
@@ -136,7 +138,17 @@ class GroupDetail extends React.Component {
                 <section className="groupDetails">
                 <h3>Group Description:</h3>
                   <p>{this.props.group.description}</p>
+
+                  <h3>Followers:</h3>
+                  <ul className="groupUserImageList">
+                    { this.props.group.users.map(
+                      user => <GroupUserFollowImage key={user.id} user={user} />
+                    )
+                    }
+                  </ul>
+
                 </section>
+
                 <section className="groupEvents">
                   <h3>Events List</h3>
                   <ul className="groupEventsItems">
