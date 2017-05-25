@@ -38,6 +38,8 @@ class Home extends React.Component {
         <section className="categoriesMain">
           <h1>Browse Group Categories</h1>
           <br />
+          <br />
+          <br />
             <section className="categoryIconsMain">
               <ul className="categoryIconsList">
                 <li>

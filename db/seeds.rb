@@ -8,6 +8,7 @@
 
 User.delete_all
 
+User.create!(username: "Guest_Account", password: "password", first_name: "Guest", last_name: "McGuest", image_url: "https://www.mountaineers.org/images/placeholder-images/placeholder-contact-profile/image_preview")
 User.create!(username: "a_park", password: "password", first_name: "Adriana ", last_name: "Park", image_url: "https://relayfm.s3.amazonaws.com/uploads/user/avatar/66/user_avatar_katiefloyd_artwork.png")
 User.create!(username: "l_palmer", password: "password", first_name: "Lila ", last_name: "Palmer", image_url: "https://media.nngroup.com/media/people/photos/Kim-Flaherty-Headshot.png.400x400_q95_autocrop_crop_upscale.png")
 User.create!(username: "r_colon", password: "password", first_name: "Rose ", last_name: "Colon", image_url: "https://media.nngroup.com/media/people/photos/Katie_Sherwin_square400x400_warm.jpg.400x400_q95_autocrop_crop_upscale.jpg")
