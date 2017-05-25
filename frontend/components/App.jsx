@@ -45,6 +45,7 @@ const App = () => (
       <Route exact path='/group/:id' component={GroupDetailContainer} />
       <Route exact path='/group/edit/:id' component={GroupEditContainer} />
       <Route exact path='/calendar/' component={GroupCalendarContainer} />
+      <Route exact path='/group/calendar/:id' component={GroupCalendarContainer} />
 
 
       <ProtectedRoute exact path='/event/new' component={EventCreateContainer} />

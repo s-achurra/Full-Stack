@@ -4,31 +4,57 @@ import BigCalendar from 'react-big-calendar';
 import moment from 'moment';
 
 class GroupCalendar extends React.Component {
+  constructor(props){
+    super(props);
+    this.events = [];
+    this.setupEvents = this.setupEvents.bind(this);
+  }
 
   componentWillMount() {
+    this.props.fetchGroup(parseInt(this.props.match.params.id));
     BigCalendar.setLocalizer(
       BigCalendar.momentLocalizer(moment)
     );
   }
 
+  setupEvents() {
+
+  }
+
   render() {
-    let date = [
-      {
-        'title': 'Meeting',
-        'start': new Date(2017, 3, 12, 10, 30, 0, 0),
-        'end': new Date(2017, 3, 12, 12, 30, 0, 0),
-        desc: 'Pre-meeting meeting, to prepare for the meeting'
+
+    if (this.props.group.group) {
+      this.events = this.props.group.group.events.map(event => {
+        let start_time = new Date(event.date_time);
+        return ({
+          'title': <Link to={`/event/${event.id}}`}>{event.title}</Link>,
+          'start': start_time,
+          'end': start_time
+        });
+      });
+    }
+
+      if (this.props.group.group) {
+        return( <section className="calendar">
+          <h1>{this.props.group.group.title}</h1>
+
+          <Link to={`/group/${this.props.group.group.id}`}
+            className="button"> Group Home </Link>
+
+          <br />
+          <br />
+
+          <BigCalendar
+          events={this.events}
+          defaultDate={new Date()}
+          />
+        </section>
+      );
+      } else {
+        return(
+          <section>loading</section>
+        );
       }
-    ]
-    
-    return(
-      <div className="calendar">
-        <BigCalendar
-        events={date}
-        defaultDate={new Date()}
-        />
-      </div>
-    );
   }
 }
 
