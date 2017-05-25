@@ -1,3 +1,10 @@
+.calendar {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
 .rbc-btn {
   color: inherit;
   font: inherit;
@@ -18,6 +25,7 @@ button.rbc-input::-moz-focus-inner {
 }
 .rbc-calendar {
   box-sizing: border-box;
+  min-height: 580px;
   height: 100%;
   display: -ms-flexbox;
   display: flex;
@@ -48,6 +56,9 @@ button.rbc-input::-moz-focus-inner {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  a {
+    color: white;
+  }
 }
 .rbc-rtl {
   direction: rtl;
@@ -177,6 +188,9 @@ button.rbc-input::-moz-focus-inner {
   background-color: #3174ad;
   border-radius: 5px;
   color: #fff;
+  a {
+    color: white;
+  }
 }
 .rbc-event.rbc-selected {
   background-color: #265985;
