@@ -26,11 +26,11 @@ class Search extends React.Component {
   updateSearch(e) {
     e.preventDefault();
     if (e.target.value) {
-      this.props.fetchAllSearches(e.target.value);
       this.query = e.target.value;
+      this.props.fetchAllSearches(e.target.value);
     } else {
-      this.props.fetchAllSearches(undefined);
       this.query = '';
+      this.props.fetchAllSearches(undefined);
     }
   }
 

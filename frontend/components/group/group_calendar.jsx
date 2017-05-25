@@ -12,10 +12,19 @@ class GroupCalendar extends React.Component {
   }
 
   render() {
+    let date = [
+      {
+        'title': 'Meeting',
+        'start': new Date(2017, 3, 12, 10, 30, 0, 0),
+        'end': new Date(2017, 3, 12, 12, 30, 0, 0),
+        desc: 'Pre-meeting meeting, to prepare for the meeting'
+      }
+    ]
+    
     return(
       <div className="calendar">
         <BigCalendar
-        events={[]}
+        events={date}
         defaultDate={new Date()}
         />
       </div>
