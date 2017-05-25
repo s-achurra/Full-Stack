@@ -10,6 +10,7 @@ import GroupCreateContainer from './group/group_create_container';
 import GroupIndexContainer from './group/group_index_container';
 import GroupDetailContainer from './group/group_detail_container';
 import GroupEditContainer from './group/group_edit_container';
+import GroupCalendarContainer from './group/group_calendar_container';
 
 import EventCreateContainer from './event/event_create_container';
 import EventIndexContainer from './event/event_index_container';
@@ -43,6 +44,7 @@ const App = () => (
       <Route exact path='/groups/:category' component={GroupIndexContainer} />
       <Route exact path='/group/:id' component={GroupDetailContainer} />
       <Route exact path='/group/edit/:id' component={GroupEditContainer} />
+      <Route exact path='/calendar/' component={GroupCalendarContainer} />
 
 
       <ProtectedRoute exact path='/event/new' component={EventCreateContainer} />

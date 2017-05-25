@@ -2,6 +2,9 @@ import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import GroupDetailEventItem from './group_detail_event_item';
 import { postFollow, deleteFollow } from '../../util/follow_api_util';
+import BigCalendar from 'react-big-calendar';
+import moment from 'moment';
+
 
 class GroupDetail extends React.Component {
   constructor(props) {
@@ -15,6 +18,9 @@ class GroupDetail extends React.Component {
 
   componentWillMount() {
     this.props.fetchGroup(parseInt(this.props.match.params.id));
+    BigCalendar.setLocalizer(
+      BigCalendar.momentLocalizer(moment)
+    );
   }
 
   componentWillReceiveProps(newProps) {
@@ -150,7 +156,12 @@ class GroupDetail extends React.Component {
             <section className="groupDetailButtons">
               <button className="button" id={`${this.props.group.id}`} onClick={this.handleDelete}>Delete Group</button>
             </section>
-
+            <div>
+              <BigCalendar
+                events={this.props.group.events}
+                defaultDate={new Date()}
+              />
+            </div>
         </section>
       );
     }
