@@ -115,7 +115,9 @@ class EventDetail extends React.Component {
                 <p>{this.props.event.group.title}</p>
                 </Link>
                 <h3>Host: </h3>
-                <p>{this.props.event.host.username}</p>
+                <img className="hostImage" src={this.props.event.host.image_url}/>
+                <p>Username: {this.props.event.host.username}</p>
+                <p>First Name: {this.props.event.host.first_name}</p>
               </section>
 
               <section className="eventDetailRight">

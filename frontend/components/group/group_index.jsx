@@ -35,14 +35,16 @@ class GroupIndex extends React.Component {
     }
 
     this.props.match.params.category ?
-      title = this.props.match.params.category.toUpperCase() :
+      title = this.props.match.params.category.toUpperCase() + " GROUPS" :
       title = "ALL GROUPS"
 
     if (this.props.groups) {
       return (
         <section className="groupIndex">
           <section className="groupIndexHeader">
+            <br />
             <h1>{title}</h1>
+            <br />
           </section>
           <section className="groupIndexList">
             <ul>

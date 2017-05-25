@@ -10,6 +10,7 @@ class GroupForm extends React.Component {
       location: '',
       category: '',
       image_url: '',
+      owner_id: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.update = this.update.bind(this);
@@ -24,6 +25,7 @@ class GroupForm extends React.Component {
   if (this.state.image_url === '') {
     this.state.image_url = "https://secure.meetupstatic.com/s/img/041003812446967856280/logo/svg/logo--script.svg";
   }
+  this.state.owner_id = this.props.state.session.currentUser.id;
   this.props.createGroup(this.state)
     .then(group => window.location.href=`/#/group/${group.id}`);
   }

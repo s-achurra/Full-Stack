@@ -8,6 +8,7 @@
 
 .categoriesMain h1, .groupIndexHeader h1 {
   font-size: 40px;
+  font-weight: 600;
 }
 
 .categoryIconsMain, .groupIndexList {
@@ -21,7 +22,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 850px;
+  max-width: 1000px;
   justify-content: space-around;
   align-items: center;
 }
@@ -34,16 +35,26 @@
 
 .homeCategory, .groupImage {
   border: 1px solid black;
-  width: 200px;
-  height: 100px;
+  width: 300px;
+  height: 200px;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
+.groupImage:hover img {
+  background-size: 110%;
+}
+
 .categoryIconsList a, .groupIndexList a {
   text-decoration: none;
   color: black;
+}
+
+.categoryIconsList h4, .groupIndexList p {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
 }
 
 // Group Index Specific

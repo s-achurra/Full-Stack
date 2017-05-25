@@ -80,4 +80,15 @@
 
 .eventDetailLeft img {
   width: 80%;
+  height: auto;
+}
+
+img.ownerImage {
+  margin-bottom: 0px;
+}
+
+.eventDetailLeft a {
+  margin: 0;
+  text-decoration: none;
+  color: black;
 }

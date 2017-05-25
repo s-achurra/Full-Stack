@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import GroupDetailEventItem from './group_detail_event_item';
+import GroupUserFollowImage from './group_user_follow_image';
 import { postFollow, deleteFollow } from '../../util/follow_api_util';
 import BigCalendar from 'react-big-calendar';
 import moment from 'moment';
@@ -32,21 +33,21 @@ class GroupDetail extends React.Component {
   handleDelete(e) {
     e.preventDefault();
     if (this.props.current_user &&
-      this.prpos.current_user.id === this.props.group.owner.id) {
+      this.props.current_user.id === this.props.group.owner_id) {
       let check = confirm("Are you sure you would like to delete this group?");
       if (check) {
         this.props.deleteGroup(e.target.id)
         .then(window.location.href="#/groups");
       }
     } else {
-      alert("You must own an group to delete. Log in to delete.")
+      alert("You must own an group to delete. Log in to delete.");
     }
   }
 
   handleEdit(e) {
     e.preventDefault();
     if (this.props.current_user &&
-      this.prpos.current_user.id === this.props.group.owner.id) {
+      this.props.current_user.id === this.props.group.owner_id) {
       window.location.href=`#/group/edit/${e.target.id}`;
     } else {
       alert("You must own a group to update. Log in to update.");
@@ -132,15 +133,28 @@ class GroupDetail extends React.Component {
                 <p>{this.props.group.location}</p>
                 <h3>Category: </h3>
                 <p>{this.props.group.category}</p>
-                <h3>Creator: </h3>
-                <p>{this.props.group.owner.username}</p>
+                <h3>Owner: </h3>
+                <img className="ownerImage" src={this.props.group.owner.image_url}/>
+                <p>Username: {this.props.group.owner.username}</p>
+                <p>First Name: {this.props.group.owner.first_name}</p>
+
               </section>
 
               <section className="groupDetailRight">
                 <section className="groupDetails">
                 <h3>Group Description:</h3>
                   <p>{this.props.group.description}</p>
+
+                  <h3>Followers:</h3>
+                  <ul className="groupUserImageList">
+                    { this.props.group.users.map(
+                      user => <GroupUserFollowImage key={user.id} user={user} />
+                    )
+                    }
+                  </ul>
+
                 </section>
+
                 <section className="groupEvents">
                   <h3>Events List</h3>
                   <ul className="groupEventsItems">
