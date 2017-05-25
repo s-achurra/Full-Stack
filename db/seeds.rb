@@ -17,215 +17,368 @@ User.create!(
 
 Group.delete_all
 
-Group.create!(title: "French Cooking", description: "This group is dedicated to learning about French cooking", category: "Food", location: "SF", image_url: "http://www.culinaryschools.org/images/crepes.jpg", owner_id: 1)
-Group.create!(title: "Teched Crusaders", description: "We search for all things tech and strive to kepe ahead of the curve. We're always looking for new tech events and product demos.", category: "Tech", location: "SF", image_url: "https://static.pexels.com/photos/177598/pexels-photo-177598.jpeg", owner_id: 1)
-Group.create!(title: "Runners Together", description: "If you like running this is the group for you. We have regular group runs discuss equipment and technique and work to keep everyone pushing forward.", category: "Health", location: "SF", image_url: "https://c1.staticflickr.com/4/3790/19300545790_82ac2a3444_b.jpg", owner_id: 1)
-Group.create!(title: "Learn Spanish!", description: "All skill levels welcome to prectice and perfect your Spanish skills.", category: "Language", location: "SF", image_url: "http://www.publicdomainpictures.net/pictures/180000/velka/spanish-flag-1464084072Hvb.jpg", owner_id: 1)
-Group.create!(title: "HikeUp!", description: "Moutian climbing is our passion and climbing as a group is our pleasure. Advanced climbers only. You'll need to provide your own gear.", category: "Outdoors", location: "SF", image_url: "https://upload.wikimedia.org/wikipedia/commons/1/19/Overhanging_rock_climbing.jpg", owner_id: 1)
-Group.create!(title: "Italian Cooking", description: "This group is dedicated to learning about Italian cooking", category: "Food", location: "SF", image_url: "https://static.pexels.com/photos/41320/beef-cheese-cuisine-delicious-41320.jpeg", owner_id: 1)
-Group.create!(title: "Ruby Coders", description: "Get out from behind you computers and lets MeetUp. Stay in touch with other developers and discuss the latest tech for Ruby.", category: "Tech", location: "SF", image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/2000px-Ruby_logo.svg.png", owner_id: 1)
-Group.create!(title: "Parents for Parks", description: "Bring the whole family to the park while meeting other parents.", category: "Family", location: "SF", image_url: "https://upload.wikimedia.org/wikipedia/commons/6/60/Green_Park%2C_London_-_April_2007.jpg", owner_id: 1)
-Group.create!(title: "Poetry Pack", description: "Snap Snap Snap. Bring your cool prose to our group events. Listen to poetry from others and discuss what makes good poetry.", category: "Writing", location: "SF", image_url: "https://c1.staticflickr.com/1/5/4757004_69f7ec8fea_z.jpg?zz=1", owner_id: 1)
-Group.create!(title: "Teachers Together", description: "This group is all about teachers and keeping up to date with various teaching techniques.", category: "Learning", location: "SF", image_url: "https://upload.wikimedia.org/wikipedia/commons/b/b4/Ghana_school_students_and_teachers.jpg", owner_id: 1)
+Group.create!(title: "French Cooking", description: "This group is dedicated to learning about French cooking", category: "Food", location: "San Francisco", image_url: "http://www.culinaryschools.org/images/crepes.jpg", owner_id: 1)
+Group.create!(title: "Teched Crusaders", description: "We search for all things tech and strive to kepe ahead of the curve. We're always looking for new tech events and product demos.", category: "Tech", location: "San Francisco", image_url: "https://static.pexels.com/photos/177598/pexels-photo-177598.jpeg", owner_id: 1)
+Group.create!(title: "Runners Together", description: "If you like running this is the group for you. We have regular group runs discuss equipment and technique and work to keep everyone pushing forward.", category: "Health", location: "San Francisco", image_url: "https://c1.staticflickr.com/4/3790/19300545790_82ac2a3444_b.jpg", owner_id: 1)
+Group.create!(title: "Learn Spanish!", description: "All skill levels welcome to prectice and perfect your Spanish skills.", category: "Language", location: "San Francisco", image_url: "http://www.publicdomainpictures.net/pictures/180000/velka/spanish-flag-1464084072Hvb.jpg", owner_id: 1)
+Group.create!(title: "HikeUp!", description: "Moutian climbing is our passion and climbing as a group is our pleasure. Advanced climbers only. You'll need to provide your own gear.", category: "Outdoors", location: "San Francisco", image_url: "https://upload.wikimedia.org/wikipedia/commons/1/19/Overhanging_rock_climbing.jpg", owner_id: 1)
+Group.create!(title: "Italian Cooking", description: "This group is dedicated to learning about Italian cooking", category: "Food", location: "San Francisco", image_url: "https://static.pexels.com/photos/41320/beef-cheese-cuisine-delicious-41320.jpeg", owner_id: 1)
+Group.create!(title: "Ruby Coders", description: "Get out from behind you computers and lets MeetUp. Stay in touch with other developers and discuss the latest tech for Ruby.", category: "Tech", location: "San Francisco", image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/2000px-Ruby_logo.svg.png", owner_id: 1)
+Group.create!(title: "Parents for Parks", description: "Bring the whole family to the park while meeting other parents.", category: "Family", location: "San Francisco", image_url: "https://upload.wikimedia.org/wikipedia/commons/6/60/Green_Park%2C_London_-_April_2007.jpg", owner_id: 1)
+Group.create!(title: "Poetry Pack", description: "Snap Snap Snap. Bring your cool prose to our group events. Listen to poetry from others and discuss what makes good poetry.", category: "Writing", location: "San Francisco", image_url: "https://c1.staticflickr.com/1/5/4757004_69f7ec8fea_z.jpg?zz=1", owner_id: 1)
+Group.create!(title: "Teachers Together", description: "This group is all about teachers and keeping up to date with various teaching techniques.", category: "Learning", location: "San Francisco", image_url: "https://upload.wikimedia.org/wikipedia/commons/b/b4/Ghana_school_students_and_teachers.jpg", owner_id: 1)
+Group.create!(title: "Home School", description: "Need help with homeschooling?  This is the groupe for you to discuss all things homeschooling.", category: "Learning", location: "San Francisco", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "New Moms", description: "New moms need support. This is the group to lend eachother a helping hand.", category: "Family", location: "San Francisco", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Childhood Educators", description: "Techniques, tricks, and tips for teaching our nations youth.", category: "Learning", location: "San Francisco", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg", owner_id: 1)
+Group.create!(title: "Adoptive Parents", description: "Congratulations. You're a parent of an adoptive child. ", category: "Family", location: "San Francisco", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Private School", description: "Which private schools are the best? What are the application processes like? Meetup and Discuss.", category: "Learning", location: "San Francisco", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Single Parent Meetups", description: "Parenting is hard enough. You don't need to do it alone. ", category: "Family", location: "San Francisco", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Experience Arts", description: "Gather. Art. Grow.", category: "Learning", location: "San Francisco", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg", owner_id: 1)
+Group.create!(title: "Parent Support", description: "Parenting is hard enough. You don't need to do it alone. ", category: "Family", location: "San Francisco", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Social Science", description: "Meet to talk about the newest Socail Publications", category: "Learning", location: "San Francisco", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "City Writers Club", description: "Let's Write!", category: "Writing", location: "San Francisco", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Writers Community", description: "Let's Write!", category: "Writing", location: "San Francisco", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg", owner_id: 1)
+Group.create!(title: "Haiku Poets", description: "Space is limited; In a haiku, so it's hard; To finish what you", category: "Writing", location: "San Francisco", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Short Story Tellerrs", description: "I'll keep this brief. Let's get together and share our short stories.", category: "Writing", location: "San Francisco", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Journalism", description: "Just the facts", category: "Writing", location: "San Francisco", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Novelist", description: "Imagination abound", category: "Writing", location: "San Francisco", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg", owner_id: 1)
+Group.create!(title: "Social Authors", description: "Let's get togeher and have some fun", category: "Writing", location: "San Francisco", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Technical Writing", description: "Meetup and be better", category: "Writing", location: "San Francisco", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Young Writers", description: "Make more happen in your area", category: "Writing", location: "San Francisco", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Beer Socails", description: "Drink your fill.", category: "Food", location: "San Francisco", image_url: "https://dc8gwjuur0w0x.cloudfront.net/lists/avatars/000/000/047/original_o-PINT-GLASS-BEER-facebook.jpg?1473216955", owner_id: 1)
+Group.create!(title: "Coffee Lovers", description: "Let's get togeher and have some fun", category: "Food", location: "San Francisco", image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/275px-A_small_cup_of_coffee.JPG", owner_id: 1)
+Group.create!(title: "Potluck", description: "Meetup and be better", category: "Food", location: "San Francisco", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Tea Lovers", description: "Make more happen in your area", category: "Food", location: "San Francisco", image_url: "http://www.natashaspierogi.com/wp-content/uploads/2016/05/Tea.jpg", owner_id: 1)
+Group.create!(title: "Bakers Bake", description: "Let's get togeher and have some fun", category: "Food", location: "San Francisco", image_url: "http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/652/910/0136476_630x473.jpg", owner_id: 1)
+Group.create!(title: "Homemade Icecreams", description: "Meetup and be better", category: "Food", location: "San Francisco", image_url: "https://www-tc.pbs.org/food/files/2012/07/History-of-Ice-Cream-1.jpg", owner_id: 1)
+Group.create!(title: "BBQ", description: "Make more happen in your area", category: "Food", location: "San Francisco", image_url: "http://p1cdn4static.sharpschool.com/UserFiles/Servers/Server_20394251/Image/News/bbq.jpg", owner_id: 1)
+Group.create!(title: "International Cuisine", description: "Let's get togeher and have some fun", category: "Food", location: "San Francisco", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Brunch Meetup", description: "Meetup and be better", category: "Food", location: "San Francisco", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg", owner_id: 1)
+Group.create!(title: "Wine Tasting", description: "Make more happen in your area", category: "Food", location: "San Francisco", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Big Analytics", description: "Let's get togeher and have some fun", category: "Tech", location: "San Francisco", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Data Science", description: "Meetup and be better", category: "Tech", location: "San Francisco", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Scala", description: "Make more happen in your area", category: "Tech", location: "San Francisco", image_url: "https://blog.jdriven.com/wp-content/uploads/2015/04/scala-snippet.png", owner_id: 1)
+Group.create!(title: "Women Who Code", description: "Let's get togeher and have some fun", category: "Tech", location: "San Francisco", image_url: "http://tech.co/wp-content/uploads/2012/07/Women-in-Tech.jpeg", owner_id: 1)
+Group.create!(title: "Front End Developers", description: "Meetup and be better", category: "Tech", location: "San Francisco", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Android Development", description: "Make more happen in your area", category: "Tech", location: "San Francisco", image_url: "https://pbs.twimg.com/profile_images/616076655547682816/6gMRtQyY.jpg", owner_id: 1)
+Group.create!(title: "Virtual Reality", description: "Let's get togeher and have some fun", category: "Tech", location: "San Francisco", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg", owner_id: 1)
+Group.create!(title: "React", description: "Meetup and be better", category: "Tech", location: "San Francisco", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Big Data", description: "Make more happen in your area", category: "Tech", location: "San Francisco", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Hackathons", description: "Let's get togeher and have some fun", category: "Tech", location: "San Francisco", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Free Yoga", description: "Meetup and be better", category: "Health", location: "San Francisco", image_url: "http://www.bloomyoganj.com/wp-content/uploads/2014/11/yoga-pose.jpg", owner_id: 1)
+Group.create!(title: "Microbiome Builders", description: "Make more happen in your area", category: "Health", location: "San Francisco", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Fun Runners", description: "Let's get togeher and have some fun", category: "Health", location: "San Francisco", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Footy Friends", description: "Meetup and be better", category: "Health", location: "San Francisco", image_url: "http://grfx.cstv.com/photos/schools/geo/sports/w-soccer/auto_vipgiant_w/12151309.jpeg", owner_id: 1)
+Group.create!(title: "Hocky Homies", description: "Make more happen in your area", category: "Health", location: "San Francisco", image_url: "https://bsbproduction.s3.amazonaws.com/portals/12274/images/hockey-with-heart.jpg", owner_id: 1)
+Group.create!(title: "Hand Ball Players", description: "Let's get togeher and have some fun", category: "Health", location: "San Francisco", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Kickball", description: "Meetup and be better", category: "Health", location: "San Francisco", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Dodgeball", description: "Make more happen in your area", category: "Health", location: "San Francisco", image_url: "http://chevydetroit.com/wp-content/uploads/2014/02/Dodgeball.jpg", owner_id: 1)
+Group.create!(title: "Gym Group", description: "Let's get togeher and have some fun", category: "Health", location: "San Francisco", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg", owner_id: 1)
+Group.create!(title: "German Meetup", description: "Meetup and be better", category: "Language", location: "San Francisco", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Language Lovers", description: "Make more happen in your area", category: "Language", location: "San Francisco", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Language Exchange", description: "Let's get togeher and have some fun", category: "Language", location: "San Francisco", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Japanese Language Meetup", description: "Meetup and be better", category: "Language", location: "San Francisco", image_url: "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/1280px-Flag_of_Japan.svg.png", owner_id: 1)
+Group.create!(title: "International Language Exchange", description: "Make more happen in your area", category: "Language", location: "San Francisco", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Dutch Language Meetup", description: "Let's get togeher and have some fun", category: "Language", location: "San Francisco", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Russian", description: "Meetup and be better", category: "Language", location: "San Francisco", image_url: "https://upload.wikimedia.org/wikipedia/en/archive/f/f3/20120812153730%21Flag_of_Russia.svg", owner_id: 1)
+Group.create!(title: "English as a Second Language", description: "Make more happen in your area", category: "Language", location: "San Francisco", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg", owner_id: 1)
+Group.create!(title: "Basque Meetup Lessons", description: "Learn Basque from the Pros.", category: "Language", location: "San Francisco", image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Flag_of_the_Basque_Country.svg/1200px-Flag_of_the_Basque_Country.svg.png", owner_id: 1)
+Group.create!(title: "Get Your Climb On", description: "Meetup and be better", category: "Outdoors", location: "San Francisco", image_url: "https://www.climbing.com/.image/t_share/MTM3NjAyMTE5NTQ4MDE5OTU0/burr102411-024jpg.jpg", owner_id: 1)
+Group.create!(title: "Outdoor Adventures", description: "Make more happen in your area", category: "Outdoors", location: "San Francisco", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg", owner_id: 1)
+Group.create!(title: "Mountain Bikers", description: "Let's get togeher and have some fun", category: "Outdoors", location: "San Francisco", image_url: "http://www.bicycling.com/sites/bicycling.com/files/articles/2016/03/spider_rocks_0.jpg", owner_id: 1)
+Group.create!(title: "Beach Meetup", description: "Meetup and be better", category: "Outdoors", location: "San Francisco", image_url: "http://travel.home.sndimg.com/content/dam/images/travel/fullset/2014/12/3/top-10-caribbean-beaches-eagle-beach-aruba.jpg.rend.hgtvcom.966.725.jpeg", owner_id: 1)
+Group.create!(title: "Sail Teams", description: "Make more happen in your area", category: "Outdoors", location: "San Francisco", image_url: "http://d19vj6yy87fjj8.cloudfront.net/wp-content/uploads/2016/10/Day3_Baths_Sailing_Soukha453_Moorings_1828.jpg", owner_id: 1)
+Group.create!(title: "Explore Your Area", description: "Let's get togeher and have some fun", category: "Outdoors", location: "San Francisco", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg", owner_id: 1)
 
 # Event Create
 
-Event.create!(
-  host_id: 1,
-  group_id: 1,
-  title: "Get together",
-  description: "We're just going to gather.",
-  location: "SF",
-  date: "2017-06-06",
-  start_time: "12:00:00"
-)
+Event.delete_all
 
-Event.create!(
-  host_id: 1,
-  group_id: 2,
-  title: "Get together",
-  description: "We're just going to gather.",
-  location: "SF",
-  date: "2017-06-06",
-  start_time: "12:00:00"
-)
-
-Event.create!(
-  host_id: 1,
-  group_id: 3,
-  title: "Get together",
-  description: "We're just going to gather.",
-  location: "SF",
-  date: "2017-06-06",
-  start_time: "12:00:00"
-)
-
-Event.create!(
-  host_id: 1,
-  group_id: 4,
-  title: "Get together",
-  description: "We're just going to gather.",
-  location: "SF",
-  date: "2017-06-06",
-  start_time: "12:00:00"
-)
-
-Event.create!(
-  host_id: 1,
-  group_id: 5,
-  title: "Get together",
-  description: "We're just going to gather.",
-  location: "SF",
-  date: "2017-06-06",
-  start_time: "12:00:00"
-)
-
-Event.create!(
-  host_id: 1,
-  group_id: 6,
-  title: "Get together",
-  description: "We're just going to gather.",
-  location: "SF",
-  date: "2017-06-06",
-  start_time: "12:00:00"
-)
-
-Event.create!(
-  host_id: 1,
-  group_id: 7,
-  title: "Get together",
-  description: "We're just going to gather.",
-  location: "SF",
-  date: "2017-06-06",
-  start_time: "12:00:00"
-)
-
-Event.create!(
-  host_id: 1,
-  group_id: 8,
-  title: "Get together",
-  description: "We're just going to gather.",
-  location: "SF",
-  date: "2017-06-06",
-  start_time: "12:00:00"
-)
-
-Event.create!(
-  host_id: 1,
-  group_id: 9,
-  title: "Get together",
-  description: "We're just going to gather.",
-  location: "SF",
-  date: "2017-06-06",
-  start_time: "12:00:00"
-)
-
-Event.create!(
-  host_id: 1,
-  group_id: 10,
-  title: "Get together",
-  description: "We're just going to gather.",
-  location: "SF",
-  date: "2017-06-06",
-  start_time: "12:00:00"
-)
-
-Event.create!(
-  host_id: 1,
-  group_id: 1,
-  title: "Get together",
-  description: "We're just going to gather.",
-  location: "SF",
-  date: "2017-06-06",
-  start_time: "12:00:00"
-)
-
-Event.create!(
-  host_id: 1,
-  group_id: 2,
-  title: "Get together",
-  description: "We're just going to gather.",
-  location: "SF",
-  date: "2017-06-06",
-  start_time: "12:00:00"
-)
-
-Event.create!(
-  host_id: 1,
-  group_id: 3,
-  title: "Get together",
-  description: "We're just going to gather.",
-  location: "SF",
-  date: "2017-06-06",
-  start_time: "12:00:00"
-)
-
-Event.create!(
-  host_id: 1,
-  group_id: 4,
-  title: "Get together",
-  description: "We're just going to gather.",
-  location: "SF",
-  date: "2017-06-06",
-  start_time: "12:00:00"
-)
-
-Event.create!(
-  host_id: 1,
-  group_id: 5,
-  title: "Get together",
-  description: "We're just going to gather.",
-  location: "SF",
-  date: "2017-06-06",
-  start_time: "12:00:00"
-)
-
-Event.create!(
-  host_id: 1,
-  group_id: 6,
-  title: "Get together",
-  description: "We're just going to gather.",
-  location: "SF",
-  date: "2017-06-06",
-  start_time: "12:00:00"
-)
-
-Event.create!(
-  host_id: 1,
-  group_id: 7,
-  title: "Get together",
-  description: "We're just going to gather.",
-  location: "SF",
-  date: "2017-06-06",
-  start_time: "12:00:00"
-)
-
-Event.create!(
-  host_id: 1,
-  group_id: 8,
-  title: "Get together",
-  description: "We're just going to gather.",
-  location: "SF",
-  date: "2017-06-06",
-  start_time: "12:00:00"
-)
-
-Event.create!(
-  host_id: 1,
-  group_id: 9,
-  title: "Get together",
-  description: "We're just going to gather.",
-  location: "SF",
-  date: "2017-06-06",
-  start_time: "12:00:00"
-)
-
-Event.create!(
-  host_id: 1,
-  group_id: 10,
-  title: "Get together",
-  description: "We're just going to gather.",
-  location: "SF",
-  date: "2017-06-06",
-  start_time: "12:00:00"
-)
+Event.create!(host_id: 1, group_id: 1, title: "Go Running", description: "We're going to go run around the park", location: "Park", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://www.sftodo.com/images/activities/running-san-francisco.jpg")
+Event.create!(host_id: 1, group_id: 2, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 3, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 4, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 5, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 6, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 7, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 8, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 9, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 10, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 11, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 12, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 13, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 14, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 15, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 16, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 17, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 18, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 19, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 20, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 21, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 22, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 23, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 24, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 25, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 26, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 27, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 28, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 29, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 30, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 31, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 32, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 33, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 34, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 35, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 36, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 37, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 38, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 39, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 40, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 41, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 42, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 43, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 44, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 45, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 46, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 47, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 48, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 49, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 50, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 51, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 52, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 53, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 54, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 55, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 56, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 57, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 58, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 59, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 60, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 61, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 62, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 63, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 64, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 65, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 66, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 67, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 68, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 69, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 70, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 71, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 72, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 1, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 2, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 3, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 4, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 5, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 6, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 7, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 8, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 9, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 10, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 11, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 12, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 13, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 14, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 15, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 16, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 17, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 18, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 19, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 20, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 21, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 22, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 23, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 24, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 25, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 26, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 27, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 28, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 29, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 30, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 31, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 32, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 33, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 34, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 35, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 36, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 37, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 38, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 39, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 40, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 41, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 42, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 43, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 44, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 45, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 46, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 47, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 48, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 49, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 50, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 51, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 52, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 53, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 54, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 55, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 56, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 57, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 58, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 59, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 60, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 61, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 62, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 63, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 64, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 65, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 66, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 67, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 68, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 69, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 70, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 71, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 72, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 1, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 2, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 3, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 4, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 5, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 6, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 7, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 8, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 9, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 10, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 11, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 12, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 13, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 14, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 15, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 16, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 17, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 18, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 19, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 20, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 21, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 22, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 23, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 24, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 25, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 26, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 27, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 28, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 29, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 30, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 31, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 32, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 33, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 34, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 35, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 36, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 37, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 38, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 39, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 40, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 41, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 42, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 43, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 44, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 45, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 46, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 47, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 48, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 49, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 50, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 51, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 52, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 53, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 54, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 55, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 56, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 57, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 58, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 59, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 60, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 61, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 62, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 63, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 64, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 65, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 66, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 67, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 68, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 69, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 70, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 71, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 72, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 1, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 2, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 3, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 4, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 5, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 6, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 7, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 8, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 9, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 10, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 11, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 12, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 13, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 14, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 15, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 16, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 17, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 18, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 19, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 20, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 21, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 22, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 23, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 24, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 25, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 26, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 27, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 28, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 29, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 30, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 31, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 32, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 33, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 34, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 35, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 36, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 37, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 38, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 39, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 40, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 41, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 42, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 43, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 44, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 45, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 46, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 47, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 48, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 49, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 50, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 51, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 52, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 53, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 54, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 55, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 56, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 57, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 58, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 59, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 60, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 61, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 62, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 63, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 64, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 65, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 66, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 67, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 68, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 69, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "http://cdn.pcwallart.com/images/simple-color-background-wallpaper-1.jpg")
+Event.create!(host_id: 1, group_id: 70, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 71, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/SGXfWnHcUQs/maxresdefault.jpg")
+Event.create!(host_id: 1, group_id: 72, title: "Get Together", description: "We're just getting together", location: "SF", date: "2017/10/10", start_time: "11:00", end_time: "12:00", image_url: "https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg")
