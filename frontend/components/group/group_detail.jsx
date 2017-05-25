@@ -26,21 +26,21 @@ class GroupDetail extends React.Component {
   handleDelete(e) {
     e.preventDefault();
     if (this.props.current_user &&
-      this.prpos.current_user.id === this.props.group.owner.id) {
+      this.props.current_user.id === this.props.group.owner_id) {
       let check = confirm("Are you sure you would like to delete this group?");
       if (check) {
         this.props.deleteGroup(e.target.id)
         .then(window.location.href="#/groups");
       }
     } else {
-      alert("You must own an group to delete. Log in to delete.")
+      alert("You must own an group to delete. Log in to delete.");
     }
   }
 
   handleEdit(e) {
     e.preventDefault();
     if (this.props.current_user &&
-      this.prpos.current_user.id === this.props.group.owner.id) {
+      this.props.current_user.id === this.props.group.owner_id) {
       window.location.href=`#/group/edit/${e.target.id}`;
     } else {
       alert("You must own a group to update. Log in to update.");
@@ -126,8 +126,10 @@ class GroupDetail extends React.Component {
                 <p>{this.props.group.location}</p>
                 <h3>Category: </h3>
                 <p>{this.props.group.category}</p>
-                <h3>Creator: </h3>
+                <h3>Owner: </h3>
+                <img className="ownerId" src={this.props.group.owner.image_url}/>
                 <p>{this.props.group.owner.username}</p>
+
               </section>
 
               <section className="groupDetailRight">

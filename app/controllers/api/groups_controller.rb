@@ -48,7 +48,8 @@ class Api::GroupsController < ApplicationController
        :description,
        :location,
        :category,
-       :image_url
+       :image_url,
+       :owner_id
      )
    end
 
