@@ -30,7 +30,7 @@ class EventIndex extends React.Component {
     }
 
     if (this.props.events === undefined) {
-      return ( <div>loading...</div> )
+      return ( <div className="loader">Loading...</div> )
     }
 
     if (this.props.events) {

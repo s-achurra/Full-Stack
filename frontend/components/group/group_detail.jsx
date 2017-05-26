@@ -100,7 +100,7 @@ class GroupDetail extends React.Component {
 
   render() {
     if (!this.props.group) {
-      return ( <div>loading...</div> )
+      return ( <div className="loader">Loading...</div> )
     } else {
       return (
 

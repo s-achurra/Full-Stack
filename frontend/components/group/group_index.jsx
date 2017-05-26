@@ -31,7 +31,7 @@ class GroupIndex extends React.Component {
     }
 
     if (this.props.groups === undefined) {
-      return ( <div>loading...</div> )
+      return ( <div className="loader">Loading...</div> )
     }
 
     this.props.match.params.category ?

@@ -82,7 +82,7 @@ class EventDetail extends React.Component {
 
   render() {
     if (!this.props.event) {
-      return ( <div>loading...</div> )
+      return ( <div className="loader">Loading...</div> )
     } else {
 
       return (
