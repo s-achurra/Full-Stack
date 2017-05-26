@@ -1,28 +1,47 @@
-== README
+# MeetApp
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[MeetApp][meetapp] is a social site deisgned to bring people together. Cloned from the site [MeetUp][meetup], MeetApp users are able to browse, search, create and join groups and events that express their interests.
 
-Things you may want to cover:
+MeetApp is a project compiled by Stephen Achurra.
 
-* Ruby version
+![MeetApp home page: https://meetsapp.herokuapp.com/#/][homepage]
 
-* System dependencies
+## Features
 
-* Configuration
+- User accounts with secure authentication
+- Group/Event creation and management
+- Ability to Join or Rsvp for a Group or Event
+- Group search
+- Calendars for Groups displaying Group Event Dates
+- Categories to organize Groups
 
-* Database creation
+![MeetApp's Group List: https://meetsapp.herokuapp.com/#/groups][group]
 
-* Database initialization
+## Project Design
 
-* How to run the test suite
+MeetApp was designed and built in two weeks.
 
-* Services (job queues, cache servers, search engines, etc.)
+A [proposal][proposal] was drafted to outline the needs of the project and to keep the development on schedule.
 
-* Deployment instructions
+A [database schema][schema] was prepared alongside the design proposal.
 
-* ...
+## Technology
 
+MeetApp is a single-page application built using Rails and React.js. It was deployed using Heroku services.
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+[Front End][frontend]
+[Back End][backend]
+
+## Future Implementations
+
+The features originally implemented are such that the application can be used to bring people together. MeetApp would benifit from additional features that listed in the [future implementations][future] outline.
+
+[meetapp]: https://meetsapp.herokuapp.com/#/
+[meetup]: https://www.meetup.com/
+[homepage]: ./docs/images/meet_app_homepage.png "MeetApp home page"
+[group]: ./docs/images/group_image.png "A group's page"
+[proposal]: ./docs/README.md
+[schema]: ./docs/schema.md
+[future]: ./docs/future.md
+[frontend]: ./doc/frontend.md
+[backend]: ./doc/backend.md
