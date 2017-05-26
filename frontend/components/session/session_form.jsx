@@ -29,6 +29,9 @@ class SessionForm extends React.Component {
   }
 
     guestLogin (e) {
+      if (this.props.location.pathname !== "/login") {
+        this.props.history.push('/login');
+      }
       this.state.username = "Guest";
       this.state.password = "password";
       setTimeout( this.handleSubmit(e), 2000 );
@@ -82,7 +85,7 @@ class SessionForm extends React.Component {
             </div>
             <section className="formButtons">
               <button className="button"  onClick={this.handleSubmit}>Submit</button>
-              {this.props.formType === "login" ? guestButton : ""}
+              {guestButton}
             </section>
             {errors}
           </form>

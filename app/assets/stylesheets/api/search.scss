@@ -12,10 +12,10 @@
   margin-left: 5px;
 }
 
-.searchResults ul {
+ul.searchResults:empty {
+    visibility: hidden;
 }
 
 .searchResults li {
-
   border: 1px solid black;
 }
