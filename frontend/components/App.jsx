@@ -39,27 +39,29 @@ const App = () => (
       <GreetingContainer />
     </nav>
 
-    <Switch>
-      <Route exact path='/' component={HomeContainer} />
+    <section className="switchBody">
+      <Switch>
+        <Route exact path='/' component={HomeContainer} />
 
-      <ProtectedRoute path="/group/new" component={GroupCreateContainer} />
-      <Route exact path='/groups' component={GroupIndexContainer} />
-      <Route exact path='/groups/:category' component={GroupIndexContainer} />
-      <Route exact path='/group/:id' component={GroupDetailContainer} />
-      <Route exact path='/group/edit/:id' component={GroupEditContainer} />
-      <Route exact path='/calendar/' component={GroupCalendarContainer} />
-      <Route exact path='/group/calendar/:id' component={GroupCalendarContainer} />
-
-
-      <ProtectedRoute exact path='/event/new' component={EventCreateContainer} />
-      <Route exact path='/events' component={EventIndexContainer} />
-      <Route exact path='/event/:id' component={EventDetailContainer} />
-      <Route exact path='/event/edit/:id' component={EventEditContainer} />
+        <ProtectedRoute path="/group/new" component={GroupCreateContainer} />
+        <Route exact path='/groups' component={GroupIndexContainer} />
+        <Route exact path='/groups/:category' component={GroupIndexContainer} />
+        <Route exact path='/group/:id' component={GroupDetailContainer} />
+        <Route exact path='/group/edit/:id' component={GroupEditContainer} />
+        <Route exact path='/calendar/' component={GroupCalendarContainer} />
+        <Route exact path='/group/calendar/:id' component={GroupCalendarContainer} />
 
 
-      <AuthRoute path='/login' component={SessionFormContainer} />
-      <AuthRoute path='/signup' component={SessionFormContainer} />
-    </Switch>
+        <ProtectedRoute exact path='/event/new' component={EventCreateContainer} />
+        <Route exact path='/events' component={EventIndexContainer} />
+        <Route exact path='/event/:id' component={EventDetailContainer} />
+        <Route exact path='/event/edit/:id' component={EventEditContainer} />
+
+
+        <AuthRoute path='/login' component={SessionFormContainer} />
+        <AuthRoute path='/signup' component={SessionFormContainer} />
+      </Switch>
+    </section>
     <FooterContainer />
   </div>
 );

@@ -42,7 +42,7 @@ class SessionForm extends React.Component {
     }
 
     const switchText = this.props.formType === "login" ?
-    "Not Registered? "
+    "Don't Yet Have an Account? "
     : "Already Registered? ";
 
     const switchLink = this.props.formType === "login" ? "Sign Up" : "Log In";
@@ -55,7 +55,7 @@ class SessionForm extends React.Component {
 
     return (
       <section className="auth">
-        <section className="form">
+        <section className="form sessionForm">
 
           <header>
             <h1>{this.props.formType === "login" ? "Log In" : "Sign Up"}</h1>
