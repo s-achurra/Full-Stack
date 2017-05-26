@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, Route } from 'react-router-dom';
 
 const GroupDetailEventItem = ({ event }) => (
-  <li>
+  <li key={event.id}>
     <Link to={`/event/${event.id}`}>
     <img className="eventImage" src={event.image_url}/>
     <section className="eventListInfo">

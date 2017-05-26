@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, Route } from 'react-router-dom';
 
 const EventDetailUserItem = ({ user }) => (
-  <li>
+  <li key={user.id}>
     <Link to="/" className="inactiveLink">
     <img className="userImage" src={user.image_url}/>
     <section className="userListInfo">

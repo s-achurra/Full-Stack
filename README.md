@@ -30,6 +30,7 @@ A [database schema][schema] was prepared alongside the design proposal.
 MeetApp is a single-page application built using Rails and React.js. It was deployed using Heroku services.
 
 [Front End][frontend]
+
 [Back End][backend]
 
 ## Future Implementations
