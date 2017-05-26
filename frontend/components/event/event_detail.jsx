@@ -47,7 +47,7 @@ class EventDetail extends React.Component {
       postRsvp({
         user_id: this.props.current_user.id,
         event_id: this.props.event.id
-      }).then(this.componentWillMount());
+      }).then(this.props.fetchEvent(parseInt(this.props.match.params.id)));
     } else {
       alert("You must log in to RSVP for an Event");
     }
@@ -64,7 +64,7 @@ class EventDetail extends React.Component {
         deleteRsvp(rsvp.id)
       }
     })
-    this.componentWillMount();
+    this.props.fetchEvent(parseInt(this.props.match.params.id));
   }
 
   is_rsvped(){

@@ -56,7 +56,7 @@ class GroupDetail extends React.Component {
       postFollow({
         user_id: this.props.current_user.id,
         group_id: this.props.group.id
-      }).then(this.componentWillMount());
+      }).then(this.props.fetchGroup(parseInt(this.props.match.params.id)));
     } else {
       alert("You must log in to Follow Groups");
     }
@@ -73,7 +73,7 @@ class GroupDetail extends React.Component {
         deleteFollow(follow.id)
       }
     })
-    this.componentWillMount();
+    this.props.fetchGroup(parseInt(this.props.match.params.id));
   }
 
   handleCreateEvent(e) {
