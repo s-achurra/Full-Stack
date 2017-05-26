@@ -25,6 +25,7 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 const App = () => (
   <div>
     <nav>
+
       <section className="navLeft">
         <section className="navLeftLinks">
           <Link to="/group/new" className="navText">Make New Groups</Link>
@@ -32,7 +33,9 @@ const App = () => (
         </section>
         <SearchContainer />
       </section>
+
       <LogoContainer />
+
       <GreetingContainer />
     </nav>
 

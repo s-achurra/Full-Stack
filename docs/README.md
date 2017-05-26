@@ -5,7 +5,7 @@
 [Trello link][trello]
 
 
-[heroku]: https://boiling-lowlands-71006.herokuapp.com/#/
+[heroku]: https://meetsapp.herokuapp.com/#/
 [trello]: https://trello.com/b/Nv5I5iCq/full-stack-project
 
 ## Minimum Viable Product

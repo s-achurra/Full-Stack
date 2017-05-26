@@ -1,0 +1,68 @@
+#root nav {
+  border-bottom: 1px solid rgba(0,0,0,.12);
+  padding: 4px 0 0;
+  background-color: #fff;
+  position: relative;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px;
+}
+
+.navText {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  padding-left: 5px;
+}
+
+#logoScript {
+  height: 44px;
+  top: 54%;
+  left: 50%;
+}
+
+#root nav>h1 {
+  font-size: 3em;
+  color: black;
+}
+
+.navButtons, .navText, #logoScript, #root .navButtons {
+  display: flex;
+  align-items: center;
+}
+
+.navLeftLinks {
+  display: flex;
+  margin-right: 10px;
+}
+
+.navLeftLinks a {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.exploreGroupsLink {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  padding-left: 5px;
+  color: #ed1c40;
+}
+
+#root .navButtons,  #root .navLeft {
+   width: 30%;
+ }
+
+#root .navButtons {
+  justify-content: flex-end;
+}
+
+#root #logoScript {
+  flex: 1;
+}

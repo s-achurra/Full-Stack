@@ -9,10 +9,10 @@ const sessionLinks = () => (
 );
 
 const personalGreeting = (currentUser, logout) => (
-  <hgroup>
+  <section className="navButtons">
     <h2 className="navText">Hello, {currentUser.username}!</h2>
     <button onClick={logout}  className="button" >Log Out</button>
-	</hgroup>
+	</section>
 );
 
 const Greeting = ({ currentUser, logout }) => {
