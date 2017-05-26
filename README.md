@@ -1,6 +1,6 @@
 # MeetApp
 
-[MeetApp][meetapp] is a social site deisgned to bring people together. Cloned from the site [MeetUp][meetup], MeetApp users are able to browse, search, create and join groups and events that express their interests.
+[MeetApp][meetapp] is a social site deisgned to bring people together. Inspired by the site [MeetUp][meetup], MeetApp users are able to browse, search, create and join groups and events that express their interests.
 
 MeetApp is a project compiled by Stephen Achurra.
 
