@@ -33,6 +33,7 @@
 }
 
 .homeCategory, .groupImage {
+  transition-duration: 1s;
   width: 300px;
   height: 200px;
   background-size: 100%;
@@ -40,8 +41,9 @@
   background-position: 50% 50%;
 }
 
-.groupImage:hover img {
-  background-size: 110%;
+.homeCategory:hover, .groupImage:hover {
+  transition-duration: 1s;
+  background-size: 120%;
 }
 
 .categoryIconsList a, .groupIndexList a {
@@ -53,6 +55,10 @@
   font-size: 18px;
   font-weight: 600;
   text-align: center;
+}
+
+.categoryIconsList>ul>li>a>section{
+  background-color: rgba(0,0,0,1);
 }
 
 // Group Index Specific

@@ -11,7 +11,7 @@
 	min-height: 100vh;
 }
 
-.auth>*, .createGroup>*, .createEvent>* {
+.createGroup>*, .createEvent>* {
 	width: 50%;
 }
 
@@ -31,6 +31,14 @@
 	border: 1px solid rgba(0,0,0,.12);
 	position: relative;
 	top: -20%;
+}
+
+.auth>* {
+	width: 60%;
+}
+
+section.form.sessionForm * {
+	width: 95%;
 }
 
 .auth header, .createGroup header, .createEvent header {
@@ -115,4 +123,14 @@
 
 .createEvent header, .createEvent form {
 	top: -5%;
+}
+
+.auth, .createEvent, .createGroup {
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/64/Sem_t%C3%ADtulo_holi_festival_colours_2013.jpg);
+}
+
+section.sessionForm header, section.sessionForm form,
+.createGroup header, .createGroup form,
+.createEvent header, .createEvent form {
+	box-shadow: 4px 4px rgba(0, 0, 0, .5);
 }

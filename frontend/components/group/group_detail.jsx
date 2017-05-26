@@ -115,7 +115,7 @@ class GroupDetail extends React.Component {
               {
                 this.is_followed() ?
                 <button className="button" id={`${this.props.group.id}`} onClick={this.handleLeave}>Leave Group</button> :
-                <button className="button" id={`${this.props.group.id}`} onClick={this.handleFollow}>Follow Group</button>
+                <button className="button" id={`${this.props.group.id}`} onClick={this.handleFollow}>Join Group</button>
               }
 
               <button className="button" onClick={this.handleCreateEvent}>Create Event</button>
@@ -143,7 +143,7 @@ class GroupDetail extends React.Component {
                 <h3>Group Description:</h3>
                   <p>{this.props.group.description}</p>
 
-                  <h3>Followers:</h3>
+                  <h3>Group Members:</h3>
                   <ul className="groupUserImageList">
                     { this.props.group.users.map(
                       user => <GroupUserFollowImage key={user.id} user={user} />
