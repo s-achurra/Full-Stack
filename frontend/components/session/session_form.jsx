@@ -28,14 +28,11 @@ class SessionForm extends React.Component {
     return (e => this.setState({[property]: e.target.value}));
   }
 
-    guestLogin (e) {
-      if (this.props.location.pathname !== "/login") {
-        this.props.history.push('/login');
-      }
-      this.state.username = "Guest";
-      this.state.password = "password";
-      setTimeout( this.handleSubmit(e), 2000 );
-    }
+  guestLogin (e) {
+    this.state.username = "Guest";
+    this.state.password = "password";
+    setTimeout( this.handleSubmit(e), 2000 );
+  }
 
   render() {
     const otherForm = (this.props.formType === "login") ? 'signup' : 'login';
@@ -85,7 +82,7 @@ class SessionForm extends React.Component {
             </div>
             <section className="formButtons">
               <button className="button"  onClick={this.handleSubmit}>Submit</button>
-              {guestButton}
+              {this.props.formType === "login" ? guestButton : ""}
             </section>
             {errors}
           </form>

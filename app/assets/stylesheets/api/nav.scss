@@ -21,9 +21,7 @@
 }
 
 #logoScript {
-  height: 44px;
-  top: 54%;
-  left: 50%;
+  height: 80px;
 }
 
 #root nav>h1 {
@@ -65,4 +63,16 @@
 
 #root #logoScript {
   flex: 1;
+}
+
+.logo {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+}
+
+a.logo {
+  display: flex;
+  align-items: flex-end;
 }

@@ -50,7 +50,6 @@ componentWillReceiveProps(newProps) {
     if (this.props.errors) {
       errors = this.props.errors.map( (error, idx) => <p key={idx}>{error}</p>);
     }
-    // TODO: Errors aren't working
 
     return(
       <section className="createGroup">

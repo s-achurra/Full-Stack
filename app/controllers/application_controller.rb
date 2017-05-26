@@ -9,6 +9,7 @@ class ApplicationController < ActionController::Base
     OR lower(description) LIKE '%#{params[:query].downcase}%'
     OR lower(location) LIKE '%#{params[:query].downcase}%'
     OR lower(category) LIKE '%#{params[:query].downcase}%'")
+    .limit(8)
     render '../views/api/search/index.json.jbuilder'
   end
 
