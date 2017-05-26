@@ -12,16 +12,18 @@ class User < ActiveRecord::Base
 	has_many :owned_groups,
 	primary_key: :id,
 	foreign_key: :owner_id,
-	class_name: :Group
+	class_name: :Group,
+	dependent: :destroy
 
 	has_many :owned_events,
 	primary_key: :id,
 	foreign_key: :host_id,
-	class_name: :Event
+	class_name: :Event,
+	dependent: :destroy
 
-	has_many :follows
+	has_many :follows, dependent: :destroy
 
-	has_many :rsvps
+	has_many :rsvps, dependent: :destroy
 
 	has_many :groups,
 	through: :follows

@@ -7,12 +7,12 @@ class Group < ActiveRecord::Base
   foreign_key: :owner_id,
   class_name: :User
 
-  has_many :follows
+  has_many :follows, dependent: :destroy
 
   has_many :users,
   through: :follows
 
-  has_many :events
+  has_many :events, dependent: :destroy
 
   after_initialize :set_default_image
 
