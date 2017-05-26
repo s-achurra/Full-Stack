@@ -43,5 +43,5 @@ The features originally implemented are such that the application can be used to
 [proposal]: ./docs/README.md
 [schema]: ./docs/schema.md
 [future]: ./docs/future.md
-[frontend]: ./doc/frontend.md
-[backend]: ./doc/backend.md
+[frontend]: ./docs/frontend.md
+[backend]: ./docs/backend.md
