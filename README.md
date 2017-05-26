@@ -40,7 +40,7 @@ The features originally implemented are such that the application can be used to
 [meetapp]: https://meetsapp.herokuapp.com/#/
 [meetup]: https://www.meetup.com/
 [homepage]: ./docs/images/meet_app_homepage.png "MeetApp home page"
-[group]: ./docs/images/group_image.png "A group's page"
+[group]: ./docs/images/group_page.png "A group's page"
 [proposal]: ./docs/README.md
 [schema]: ./docs/schema.md
 [future]: ./docs/future.md
