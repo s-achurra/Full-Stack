@@ -7,12 +7,12 @@ const Footer = () => (
         <ul>
           <li>
             <a href="https://github.com/s-achurra/Full-Stack">
-              <i className="fa fa-github" aria-hidden="true"> GitHub</i>
+              <i className="fa fa-github" aria-hidden="true"></i>
             </a>
           </li>
           <li>
             <a href="https://linkedin.com/in/stephen-achurra/">
-              <i className="fa fa-linkedin" aria-hidden="true"> Linked</i>
+              <i className="fa fa-linkedin" aria-hidden="true"></i>
             </a>
           </li>
         </ul>
@@ -20,7 +20,7 @@ const Footer = () => (
       <div className="authorFooter">
       </div>
 
-        <p>Made by Stephen Achurra</p>
+      <p>Made by Stephen Achurra</p>
     </section>
   </div>
 
