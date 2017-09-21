@@ -17,6 +17,9 @@ class GroupDetail extends React.Component {
   }
 
   componentWillMount() {
+    if (this.props.group && this.props.group.id !== parseInt(this.props.match.params.id)) {
+      this.props.clearGroup()
+    }
     this.props.fetchGroup(parseInt(this.props.match.params.id));
   }
 

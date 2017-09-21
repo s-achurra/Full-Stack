@@ -7,6 +7,7 @@ export const UPDATE_GROUP = 'UPDATE_GROUP';
 export const RECEIVE_ALL_GROUPS = 'RECEIVE_ALL_GROUPS';
 export const RECEIVE_GROUP = 'RECEIVE_GROUP';
 export const RECEIVE_NEW_GROUP = 'RECEIVE_NEW_GROUP';
+export const CLEAR_GROUP = 'CLEAR_GROUP';
 export const RECEIVE_GROUP_ERRORS = "RECEIVE_GROUP_ERRORS";
 
 import * as APIUtil from '../util/group_api_util';
@@ -50,6 +51,10 @@ export const receiveGroup = (group) => ({
 export const receiveNewGroup = (group) => ({
   type: RECEIVE_NEW_GROUP,
   group
+});
+
+export const clearGroup = () => ({
+  type: CLEAR_GROUP,
 });
 
 export const receiveErrors = errors => ({
